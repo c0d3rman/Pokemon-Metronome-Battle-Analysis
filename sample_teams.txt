@@ -1,0 +1,105 @@
+=== [gen8metronomebattle] Metronome Tournament/Simple Weakness Policy ===
+
+horse 2 (Glastrier) (M) @ Weakness Policy  
+Ability: Primordial Sea  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+horse 1 (Glastrier) (M) @ Weakness Policy  
+Ability: Simple  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Brave Nature  
+- Metronome  
+
+
+=== [gen8metronomebattle] Metronome Tournament/Extreme Strength ===
+
+Heracross-Mega @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Brave Nature  
+- Metronome  
+
+Heracross-Mega @ Choice Band  
+Ability: Intrepid Sword  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Brave Nature  
+- Metronome  
+
+
+=== [gen8metronomebattle] Metronome Tournament/Balanced Flower Veil ===
+
+Chungus (Venusaur-Mega) (M) @ Choice Specs  
+Ability: Flower Veil  
+Hidden Power: Grass  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Quiet Nature  
+- Metronome  
+
+Bride of Chungus (Necturna) @ Weakness Policy  
+Ability: Thick Fat  
+Shiny: Yes  
+Hidden Power: Ghost  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+=== [gen8metronomebattle] Metronome Tournament/Bonk's Stall ===
+
+Type: Null @ Eviolite  
+Ability: Friend Guard  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Dusclops @ Eviolite  
+Ability: Friend Guard  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+=== [gen8metronomebattle] Metronome Tournament/Imposter Blissey ===
+
+Blissey (F) @ Leppa Berry  
+Ability: Imposter  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Naughty Nature  
+- Metronome  
+
+Blissey (F) @ Leppa Berry  
+Ability: Imposter  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Naughty Nature  
+- Metronome  
+
+
+=== [gen8metronomebattle] Metronome Tournament/Classic Mews ===
+
+Mew @ Choice Specs  
+Ability: Competitive  
+Hidden Power: Psychic  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Quiet Nature  
+- Metronome  
+
+Mew @ Choice Band  
+Ability: Defiant  
+Shiny: Yes  
+Hidden Power: Psychic  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Brave Nature  
+- Metronome  
+
+

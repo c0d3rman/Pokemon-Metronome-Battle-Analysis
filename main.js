@@ -1,4 +1,4 @@
-const allowIllegalTeams = true;
+const allowIllegalTeams = false;
 const functionalProgressBar = true; // Turn this off to make code a little faster (experimentally 18 mins => 17 mins) but break the progress bar
 
 
@@ -20,7 +20,7 @@ try {
         throw new Error();
     }
 } catch {
-    console.log("Example usage: node main.js teams.txt 10");
+    console.log("Example usage: node main.js sample_teams.txt 100");
     process.exit();
 }
 
