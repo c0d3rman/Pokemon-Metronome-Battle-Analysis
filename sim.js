@@ -7,7 +7,6 @@ const functionalProgressBar = true; // Turn this off to make code a little faste
 import pokemonShowdown from 'pokemon-showdown';
 const {BattleStream, Teams, TeamValidator} = pokemonShowdown;
 import fs from 'fs';
-import path from 'path';
 import cliProgress from 'cli-progress';
 import chalk from 'chalk';
 
@@ -20,7 +19,7 @@ try {
         throw new Error();
     }
 } catch {
-    console.log("Example usage: node main.js sample_teams.txt 100");
+    console.log("Example usage: node sim.js sample_teams.txt 100");
     process.exit();
 }
 
