@@ -14,7 +14,7 @@ const chalk = require('chalk');
 // Parse args
 let file, trials;
 try {
-    file = fs.readFileSync(process.argv[2]).toString();
+    file = fs.readFileSync(process.argv[2]).toString().replace(/\r/g, "");
     trials = parseInt(process.argv[3]);
     if (process.argv.length != 4 || Number.isNaN(trials) || trials <= 0) {
         throw new Error();

@@ -4,7 +4,7 @@ const columnify = require('columnify');
 const chalk = require('chalk');
 
 // All moves that can be drawn by metronome
-const moves = fs.readFileSync("metronome_moves.txt").toString().split("\n");
+const moves = fs.readFileSync("metronome_moves.txt").toString().replace(/\r/g, "").split("\n");
 // All pokemon that can be used
 const legalMons = Dex.species.all().filter((s) => !s.types.includes('Steel') && s.bst <= 625 && s.name != "Pokestar Spirit")
 
