@@ -139,6 +139,9 @@ function getColor(n, min, max) {
     if (n < min || n > max) {
         return chalk.yellow;
     }
+    if (min == max) {
+        return chalk.white;
+    }
 
     n = (n - min) / (max - min);
 
