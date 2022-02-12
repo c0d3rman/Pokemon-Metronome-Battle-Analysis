@@ -161,7 +161,7 @@ Promise.all(promises).then(() => {
         let maxVal = Math.min(2 * Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat()) - 50, 100);
 
         console.log("Winrate of player (in row) vs opponent (in column)")
-        console.log("E.g. top right cell is winrate of ")
+        console.log(`E.g. top right cell is winrate of #1 vs #${teamNames.length}`)
         matprint(strWinMatrix, minVal, maxVal);
 
         console.log("\n\nOverall winrates:\n")
