@@ -1,4 +1,4 @@
-const {Dex} = require('pokemon-showdown');
+const {Dex} = require('./pokemon-showdown');
 const fs = require('fs');
 const columnify = require('columnify');
 const chalk = require('chalk');
