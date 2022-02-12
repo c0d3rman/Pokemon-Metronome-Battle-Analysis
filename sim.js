@@ -1,15 +1,16 @@
 const allowIllegalTeams = false;
-const functionalProgressBar = true; // Turn this off to make code a little faster (experimentally 18 mins => 17 mins) but break the progress bar
 // Turn this on to treat the first team as the "challenger" and only have it battle other teams instead of having every pair battle
 // Useful for testing a team concept against a collection of common teams
 const challengerMode = true;
 
 
 
-const {BattleStream, Teams, TeamValidator} = require('pokemon-showdown');
+const {Teams, TeamValidator} = require('pokemon-showdown');
 const fs = require('fs');
 const cliProgress = require('cli-progress');
 const chalk = require('chalk');
+const workerpool = require('workerpool');
+
 
 // Parse args
 let file, trials;
@@ -44,49 +45,6 @@ const teams = [...file
         return dict
     }, {})
 
-async function simBattle(team1, team2, doPrint) {
-    const stream = new BattleStream();
-
-    stream.write(`>start {"formatid":"gen8metronomebattle"}`);
-    stream.write(`>player p1 {"name":"P1","team":"${team1}"}`);
-    stream.write(`>player p2 {"name":"P2","team":"${team2}"}`);
-
-    let p1alive = 2;
-    let p2alive = 2;
-
-    for await (const output of stream) {
-        if (doPrint) {
-            console.log(output);
-        }
-
-        for (const match of output.matchAll(/\|faint\|p([12])[ab]: /g)) {
-            if (match[1] == '1') {
-                p1alive--;
-            } else {
-                p2alive--;
-            }
-        }
-
-        const m = output.match(/\|win\|(P[12])/);
-        if (m) {
-            return m[1];
-        }
-
-        if (/\|turn\|\d+$/.test(output)) {
-            if (p1alive == 2) {
-                stream.write(`>p1 move 1, move 1`);
-            } else {
-                stream.write(`>p1 move 1`);
-            }
-            if (p2alive == 2) {
-                stream.write(`>p2 move 1, move 1`);
-            } else {
-                stream.write(`>p2 move 1`);
-            }
-        }
-    }
-}
-
 const teamNames = Object.keys(teams);
 const promises = [];
 let winMatrix = Array(teamNames.length).fill().map(()=>Array(teamNames.length).fill(0));
@@ -108,6 +66,8 @@ if (challengerMode) {
 const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
 pbar.start(totalTrials, 0);
 
+const pool = workerpool.pool(__dirname + '/simWorker.js');
+
 promises.push((async () => {
     for (let trial = 0; trial < trials; trial++) {
         const promisesRound = []; 
@@ -115,7 +75,7 @@ promises.push((async () => {
         const maxI = challengerMode ? 0 : teamNames.length - 1;
         for (let i = 0; i <= maxI; i++) {
             for (let j = i + 1; j < teamNames.length; j++) {
-                let promise = simBattle(teams[teamNames[i]], teams[teamNames[j]])
+                let promise = pool.exec('simBattle', [teams[teamNames[i]], teams[teamNames[j]]])
                 promise.then((winner) => {
                     if (winner == "P1") {
                         winMatrix[j][i]++
@@ -127,10 +87,6 @@ promises.push((async () => {
                 promises.push(promise)
                 promisesRound.push(promise)
             }
-        }
-
-        if (functionalProgressBar) {
-            await Promise.all(promisesRound);
         }
     }
 })());
@@ -212,4 +168,6 @@ Promise.all(promises).then(() => {
         const avgRates = teamNames.map((name, i) => [name, winMatrix.reduce((sum, row, j) => i == j ? sum : sum + row[i], 0) / (winMatrix.length - 1)]).sort((a, b) => b[1]- a[1])
         avgRates.forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], avgRates[avgRates.length-1][1], avgRates[0][1])(pair[1].toFixed(1)) + " | " + pair[0]))
     }
+
+    pool.terminate();
 });

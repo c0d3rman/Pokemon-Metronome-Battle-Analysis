@@ -3,6 +3,7 @@
     "chalk": "4",
     "cli-progress": "^3.10.0",
     "columnify": "^1.6.0",
-    "pokemon-showdown": "^0.11.7"
+    "pokemon-showdown": "^0.11.7",
+    "workerpool": "^6.2.0"
   }
 }
