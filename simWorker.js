@@ -1,5 +1,5 @@
 const workerpool = require('workerpool');
-const {BattleStream} = require('pokemon-showdown');
+const {BattleStream} = require('./pokemon-showdown');
 
 async function simBattle(team1, team2) {
     const stream = new BattleStream();

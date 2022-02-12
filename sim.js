@@ -1,11 +1,11 @@
-const allowIllegalTeams = false;
+const allowIllegalTeams = true;
 // Turn this on to treat the first team as the "challenger" and only have it battle other teams instead of having every pair battle
 // Useful for testing a team concept against a collection of common teams
 const challengerMode = true;
 
 
 
-const {Teams, TeamValidator} = require('pokemon-showdown');
+const {Teams, TeamValidator} = require('./pokemon-showdown');
 const fs = require('fs');
 const cliProgress = require('cli-progress');
 const chalk = require('chalk');
