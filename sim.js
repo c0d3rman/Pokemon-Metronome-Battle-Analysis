@@ -48,12 +48,24 @@ function loadTeams(file) {
         if (m) {
             name = m[2];
         }
-        dict[name] = Teams.pack(team)
+
+        // Handle duplicate team names
+        fullName = name
+        i = 1
+        while (fullName in dict) {
+            i++
+            fullName = `${name} [${i}]`
+        }
+        if (i > 1) {
+            console.log(`Warning: duplicate team name ${name} (numbering)`)
+        }
+
+        dict[fullName] = Teams.pack(team)
 
         // Warn if team is illegal
         const issues = validator.validateTeam(team)
         if (issues !== null) {
-            console.log(`Warning: team "${name}" is illegal for metronome battle:\n${issues}`)
+            console.log(`Warning: team "${fullName}" is illegal for metronome battle:\n${issues}`)
         }
         return dict
     }, {})
@@ -155,8 +167,10 @@ Promise.all(promises).then(() => {
 
     winMatrix = winMatrix.map((row) => row.map((x) => (x / trials * 100)))
 
-    let minVal = Math.max(2 * Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat()) - 50, 0);
-    let maxVal = Math.min(2 * Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat()) - 50, 100);
+    let minVal = Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
+    let maxVal = Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
+    minVal = Math.min(minVal, 100 - maxVal)
+    maxVal = Math.max(maxVal, 100 - minVal)
 
     const strWinMatrix = winMatrix.map((row) => row.map((x) => x.toFixed(1)))    
     
@@ -180,7 +194,7 @@ Promise.all(promises).then(() => {
 
     console.log("\n\nOverall winrates:\n")
     const avgRates = challNames.map((name, i) => [name, winMatrix.reduce((sum, row, j) => i == j ? sum : sum + row[i], 0) / (winMatrix.length - 1)]).sort((a, b) => b[1]- a[1])
-    avgRates.forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], avgRates[avgRates.length-1][1], avgRates[0][1])(pair[1].toFixed(1)) + " | " + pair[0]))
+    avgRates.forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
 
     pool.terminate();
 });
