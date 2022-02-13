@@ -48,12 +48,24 @@ function loadTeams(file) {
         if (m) {
             name = m[2];
         }
-        dict[name] = Teams.pack(team)
+
+        // Handle duplicate team names
+        fullName = name
+        i = 1
+        while (fullName in dict) {
+            i++
+            fullName = `${name} [${i}]`
+        }
+        if (i > 1) {
+            console.log(`Warning: duplicate team name ${name} (numbering)`)
+        }
+
+        dict[fullName] = Teams.pack(team)
 
         // Warn if team is illegal
         const issues = validator.validateTeam(team)
         if (issues !== null) {
-            console.log(`Warning: team "${name}" is illegal for metronome battle:\n${issues}`)
+            console.log(`Warning: team "${fullName}" is illegal for metronome battle:\n${issues}`)
         }
         return dict
     }, {})
