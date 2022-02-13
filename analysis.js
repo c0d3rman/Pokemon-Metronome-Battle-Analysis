@@ -154,7 +154,7 @@ console.log(`Special moves that make contact: ${
 console.log()
 
 
-console.log("The top 20 defensive type-combos (the ones which resist the most total power) are:");
+console.log("The top 50 defensive type-combos (the ones which resist the most total power) are:");
 const defensiveTypeData = legalMons.reduce((dict, s) => {
 	const key = [...s.types].sort().join("/");
 	if (!(key in dict)) {
@@ -185,7 +185,7 @@ const defensiveTypeData = legalMons.reduce((dict, s) => {
 console.log(columnify(
 	Object.values(defensiveTypeData)
 	.sort((a, b) => a.total - b.total)
-	.slice(0, 20)
+	.slice(0, 50)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {showHeaders: false, minWidth: 5, columns: ['place', 'typeF', 'total', 'pokemon']}))
 console.log("(The pokemon listed are the highest-BST legal pokemon of the given type combo)");
@@ -259,34 +259,34 @@ const statData = legalMons
 	}));
 
 
-console.log("The top 20 defensive stat pokemon (the ones with the highest sum of defensive stats) are:");
+console.log("The top 50 defensive stat pokemon (the ones with the highest sum of defensive stats) are:");
 console.log(columnify(statData
 	.sort((a, b) => b.totalDef - a.totalDef)
-	.slice(0, 20)
+	.slice(0, 50)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'def', 'spd', 'totalDef']}));
 console.log()
 
-console.log("The top 20 offensive stat pokemon (the ones with the highest sum of offensive stats) are:");
+console.log("The top 50 offensive stat pokemon (the ones with the highest sum of offensive stats) are:");
 console.log(columnify(statData
 	.sort((a, b) => b.totalAtk - a.totalAtk)
-	.slice(0, 20)
+	.slice(0, 50)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'atk', 'spa', 'totalAtk']}));
 console.log()
 
-console.log("The top 20 overall stat pokemon (the ones with the highest sum of non-speed stats) are:");
+console.log("The top 50 overall stat pokemon (the ones with the highest sum of non-speed stats) are:");
 console.log(columnify(statData
 	.sort((a, b) => b.total - a.total)
-	.slice(0, 20)
+	.slice(0, 50)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'def', 'spd', 'atk', 'spa', 'total']}));
 console.log()
 
-console.log("The top 20 physical stat pokemon are:");
+console.log("The top 50 physical stat pokemon are:");
 console.log(columnify(statData
 	.sort((a, b) => b.totalPhys - a.totalPhys)
-	.slice(0, 20)
+	.slice(0, 50)
 	.map((r, i) => {r.place = '#'+(i+1); r.typeDef = defensiveTypeData[[...Dex.species.get(r.name).types].sort().join("/")].total; return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'def', 'atk', 'totalPhys', 'typeDef']}));
 console.log()
