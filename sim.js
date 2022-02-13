@@ -167,8 +167,10 @@ Promise.all(promises).then(() => {
 
     winMatrix = winMatrix.map((row) => row.map((x) => (x / trials * 100)))
 
-    let minVal = Math.max(2 * Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat()) - 50, 0);
-    let maxVal = Math.min(2 * Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat()) - 50, 100);
+    let minVal = Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
+    let maxVal = Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
+    minVal = Math.min(minVal, 100 - maxVal)
+    maxVal = Math.max(maxVal, 100 - minVal)
 
     const strWinMatrix = winMatrix.map((row) => row.map((x) => x.toFixed(1)))    
     
@@ -192,7 +194,7 @@ Promise.all(promises).then(() => {
 
     console.log("\n\nOverall winrates:\n")
     const avgRates = challNames.map((name, i) => [name, winMatrix.reduce((sum, row, j) => i == j ? sum : sum + row[i], 0) / (winMatrix.length - 1)]).sort((a, b) => b[1]- a[1])
-    avgRates.forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], avgRates[avgRates.length-1][1], avgRates[0][1])(pair[1].toFixed(1)) + " | " + pair[0]))
+    avgRates.forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
 
     pool.terminate();
 });
