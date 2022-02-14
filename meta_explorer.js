@@ -105,46 +105,49 @@ function chooseTeam() {
 
 const trialsPerBatch = 10000;
 
-async function loop() {
-	// Progress bar
-	const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
-	pbar.start(trialsPerBatch, 0);
+// Worker pool for multithreading
+const pool = workerpool.pool(__dirname + '/simWorker.js');
 
-	// Worker pool for multithreading
-	const pool = workerpool.pool(__dirname + '/simWorker.js');
-	const promises = [];
+(async () => {
+	while (true) {
+		// Progress bar
+		const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
+		pbar.start(trialsPerBatch, 0);
 
-	// The simulation dispatcher (see the actual battle code in simWorker.js)
-	promises.push((async () => {
-	    for (let trial = 0; trial < trialsPerBatch; trial++) {
-	    	const team1 = chooseTeam();
-	    	const team2 = chooseTeam();
-	        let promise = pool.exec('simBattle', [Teams.pack(team1), Teams.pack(team2)])
-	        promise.then((winner) => {
-	        	const teamW = (winner == "P1" ? team1 : team2)
-	            for (const [set, teammate] of [teamW, [teamW[1], teamW[0]]]) {
-	            	inc(obj.data[set.species], 'Raw count');
-	            	inc(obj.data[set.species]['Items'], set.item);
-	            	inc(obj.data[set.species]['Abilities'], set.ability);
-	            	inc(obj.data[set.species]['Natures'], set.nature);
-	            	inc(obj.data[set.species]['Speeds'], set.evs.spe == 0 ? "0" : "252");
-	            	inc(obj.data[set.species]['Teammates'], teammate.species);
-	            }
-	            inc(obj.info, "sim_battles");
-	            pbar.increment();
-	        });
-	        promises.push(promise)
-	    }
-	})());
+		const promises = [];
 
-	Promise.all(promises).then(() => {
+		// The simulation dispatcher (see the actual battle code in simWorker.js)
+		promises.push((async () => {
+	    		for (let trial = 0; trial < trialsPerBatch; trial++) {
+	    			const team1 = chooseTeam();
+	    			const team2 = chooseTeam();
+	    			const promise = pool.exec('simBattle', [Teams.pack(team1), Teams.pack(team2)])
+	    			promise.then((winner) => {
+							const teamW = (winner == "P1" ? team1 : team2)
+							for (const team of [team1, team2]) {
+								const n = team === teamW ? 1 : -1;
+								for (const [set, teammate] of [team, [team[1], team[0]]]) {
+									inc(obj.data[set.species], 'Raw count', n);
+									inc(obj.data[set.species]['Items'], set.item, n);
+									inc(obj.data[set.species]['Abilities'], set.ability, n);
+									inc(obj.data[set.species]['Natures'], set.nature, n);
+									inc(obj.data[set.species]['Speeds'], set.evs.spe == 0 ? "0" : "252", n);
+									inc(obj.data[set.species]['Teammates'], teammate.species, n);
+								}
+							}
+							inc(obj.info, "sim_battles");
+							pbar.increment();
+	        		});
+		       	 	promises.push(promise)
+	   		 }
+		})());
+
+		await Promise.all(promises);
+
 		pbar.stop();
 		fs.writeFile(process.argv[3], JSON.stringify(obj), () => {})
-		loop();
-	})
-}
-
-loop();
+	}
+})();
 
 // for (let i = 0; i < 5; i++) {
 // 	const mon1 = chooseRand(obj.data, {key: 'Raw count'})
