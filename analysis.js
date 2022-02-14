@@ -1,7 +1,12 @@
+// Number of mons you want displayed in lists
+const numMons = 50;
+
+
 const {Dex} = require('./pokemon-showdown');
 const fs = require('fs');
 const columnify = require('columnify');
 const chalk = require('chalk');
+
 
 // All moves that can be drawn by metronome
 const moves = fs.readFileSync("metronome_moves.txt").toString().replace(/\r/g, "").split("\n");
@@ -154,7 +159,7 @@ console.log(`Special moves that make contact: ${
 console.log()
 
 
-console.log("The top 50 defensive type-combos (the ones which resist the most total power) are:");
+console.log(`The top ${numMons} defensive type-combos (the ones which resist the most total power) are:`);
 const defensiveTypeData = legalMons.reduce((dict, s) => {
 	const key = [...s.types].sort().join("/");
 	if (!(key in dict)) {
@@ -185,7 +190,7 @@ const defensiveTypeData = legalMons.reduce((dict, s) => {
 console.log(columnify(
 	Object.values(defensiveTypeData)
 	.sort((a, b) => a.total - b.total)
-	.slice(0, 50)
+	.slice(0, numMons)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {showHeaders: false, minWidth: 5, columns: ['place', 'typeF', 'total', 'pokemon']}))
 console.log("(The pokemon listed are the highest-BST legal pokemon of the given type combo)");
@@ -255,38 +260,47 @@ const statData = legalMons
 		totalDef: p.baseStats.hp + p.baseStats.def + p.baseStats.spd,
 		totalAtk: p.baseStats.atk + p.baseStats.spa,
 		total: p.bst - p.baseStats.spe,
-		totalPhys: p.baseStats.hp + p.baseStats.def + p.baseStats.atk
+		totalPhys: p.baseStats.hp + p.baseStats.def + p.baseStats.atk,
+		totalCustom: p.baseStats.hp + p.baseStats.def + p.baseStats.atk + p.baseStats.spd
 	}));
 
 
-console.log("The top 50 defensive stat pokemon (the ones with the highest sum of defensive stats) are:");
+console.log(`The top ${numMons} defensive stat pokemon (the ones with the highest sum of defensive stats) are:`);
 console.log(columnify(statData
 	.sort((a, b) => b.totalDef - a.totalDef)
-	.slice(0, 50)
+	.slice(0, numMons)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'def', 'spd', 'totalDef']}));
 console.log()
 
-console.log("The top 50 offensive stat pokemon (the ones with the highest sum of offensive stats) are:");
+console.log(`The top ${numMons} offensive stat pokemon (the ones with the highest sum of offensive stats) are:`);
 console.log(columnify(statData
 	.sort((a, b) => b.totalAtk - a.totalAtk)
-	.slice(0, 50)
+	.slice(0, numMons)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'atk', 'spa', 'totalAtk']}));
 console.log()
 
-console.log("The top 50 overall stat pokemon (the ones with the highest sum of non-speed stats) are:");
+console.log(`The top ${numMons} overall stat pokemon (the ones with the highest sum of non-speed stats) are:`);
 console.log(columnify(statData
 	.sort((a, b) => b.total - a.total)
-	.slice(0, 50)
+	.slice(0, numMons)
 	.map((r, i) => {r.place = '#'+(i+1); return r})
-, {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'def', 'spd', 'atk', 'spa', 'total']}));
+, {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'atk', 'def', 'spa', 'spd', 'total']}));
 console.log()
 
-console.log("The top 50 physical stat pokemon are:");
+console.log(`The top ${numMons} physical stat pokemon are:`);
 console.log(columnify(statData
 	.sort((a, b) => b.totalPhys - a.totalPhys)
-	.slice(0, 50)
+	.slice(0, numMons)
 	.map((r, i) => {r.place = '#'+(i+1); r.typeDef = defensiveTypeData[[...Dex.species.get(r.name).types].sort().join("/")].total; return r})
-, {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'def', 'atk', 'totalPhys', 'typeDef']}));
+, {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'atk', 'def', 'totalPhys', 'typeDef']}));
+console.log()
+
+console.log(`The top ${numMons} custom search pokemon are:`);
+console.log(columnify(statData
+	.sort((a, b) => b.totalCustom - a.totalCustom)
+	.slice(0, numMons)
+	.map((r, i) => {r.place = '#'+(i+1); r.typeDef = defensiveTypeData[[...Dex.species.get(r.name).types].sort().join("/")].total; return r})
+, {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'atk', 'def', 'spa', 'spd', 'spe', 'totalCustom', 'typeDef']}));
 console.log()
