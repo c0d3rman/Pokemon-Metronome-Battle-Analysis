@@ -1,4 +1,4 @@
-=== [gen8metronomebattle] Metronome Tournament/Simple Weakness Policy ===
+=== [gen8metronomebattle] Simple Weakness Policy ===
 
 horse 2 (Glastrier) (M) @ Weakness Policy  
 Ability: Primordial Sea  
@@ -16,7 +16,7 @@ Brave Nature
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Extreme Strength ===
+=== [gen8metronomebattle] Extreme Strength ===
 
 Heracross-Mega @ Choice Band  
 Ability: Intrepid Sword  
@@ -32,7 +32,7 @@ Brave Nature
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Balanced Flower Veil ===
+=== [gen8metronomebattle] Balanced Flower Veil ===
 
 Chungus (Venusaur-Mega) (M) @ Choice Specs  
 Ability: Flower Veil  
@@ -51,7 +51,7 @@ IVs: 0 Spe
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Bonk's Stall ===
+=== [gen8metronomebattle] Bonk's Stall ===
 
 Type: Null @ Eviolite  
 Ability: Friend Guard  
@@ -70,7 +70,7 @@ IVs: 0 Spe
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Imposter Blissey ===
+=== [gen8metronomebattle] Imposter Blissey ===
 
 Blissey (F) @ Leppa Berry  
 Ability: Imposter  
@@ -85,7 +85,7 @@ Naughty Nature
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Classic Mews ===
+=== [gen8metronomebattle] Classic Mews ===
 
 Mew @ Choice Specs  
 Ability: Competitive  
