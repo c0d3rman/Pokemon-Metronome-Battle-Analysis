@@ -202,6 +202,10 @@ function validateSet(set) {
 	// Storm Drain should only be run on mons weak to water, or if SpA > Atk
 	|| (set.ability == "Storm Drain" && !isWeak(mon, "Water") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	
+	//
+	// Outclassed/Redundant Abilities
+	//
+	
 	// grass types should not use abilities that are a worse flower veil
 	|| (mon.types.includes("Grass") && (set.ability == "Healer" || set.ability == "Overcoat" || set.ability == "Shed Skin" || set.ability == "Shield Dust"))
 	// poison types should not use Pastel Veil
