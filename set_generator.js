@@ -2,7 +2,7 @@ const {Dex, Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
 
-let species = 'Bulbasaur';
+let species = 'Combusken';
 
 let items = [
   'Weakness Policy',
@@ -48,24 +48,24 @@ let abilities = [
   'Analytic',
   'Dauntless Shield',
   'Delta Stream',
-  'Desolate Land', // TODO: only if team is weak to water
-  'Download', // TODO: only if SpA > Atk
-  'Flash Fire', // TODO: only if mon is weak to fire
+  'Desolate Land',
+  'Download',
+  'Flash Fire',
   'Friend Guard',
   'Ice Scales',
-  'Imposter', // TODO: only leppa blissey or light ball pikachu or thick club marowak/marowak-a
-  'Lightning Rod', // TODO: only if mon is weak to electric, or SpA > Atk
+  'Imposter',
+  'Lightning Rod',
   'Mirror Armor',
   'Misty Surge',
   'Mummy',
-  'Pixilate', // TODO: only if mon is a fairy
-  'Plus', // TODO: both mons, and only if SpA > Atk
-  'Primordial Sea', // TODO: only if mon is weak to fire or a water type
-  'Refrigerate', // TODO: only if mon is ice type
+  'Pixilate',
+  'Plus',
+  'Primordial Sea',
+  'Refrigerate',
   'Serene Grace',
   'Sheer Force',
   'Simple',
-  'Storm Drain', // TODO: only if mon is weak to water, or SpA > Atk
+  'Storm Drain',
   'Thick Fat',
   'Trace',
   
@@ -161,12 +161,22 @@ function validateSet(set) {
 	
 	// Flower Veil should only be run on grass types
     || (set.ability == "Flower Veil" && !mon.types.includes("Grass"))
+	// Pixilate should only be run on fairy types
+	|| (set.ability == "Pixilate" && !mon.types.includes("Fairy"))
+	// Refrigerate should only be run on ice types
+	|| (set.ability == "Refrigerate" && !mon.types.includes("Ice"))
 	// Aerilate and Delta Stream should only be run on flying types
     || ((set.ability == "Aerilate" || set.ability == "Delta Stream") && !mon.types.includes("Flying"))
-	// Water Bubble should only be run on water types, or mons weak to fire
-    || (set.ability == "Water Bubble" && !mon.types.includes("Water") && !isWeak(mon, "Fire"))
+	// Water Bubble and Primordial Sea should only be run on water types, or mons weak to fire
+    || ((set.ability == "Water Bubble" || set.ability == "Primordial Sea") && !mon.types.includes("Water") && !isWeak(mon, "Fire"))
 	// Desolate Land should only be run on fire types, or mons weak to water
     || (set.ability == "Desolate Land" && !mon.types.includes("Fire") && !isWeak(mon, "Water"))
+	// Flash Fire should only be run on mons weak to fire
+	|| (set.ability == "Flash Fire" && !isWeak(mon, "Fire"))
+	// Lightning Rod should only be run on mons weak to electric, or if SpA > Atk
+	|| (set.ability == "Lightning Rod" && !isWeak(mon, "Electric") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	// Storm Drain should only be run on mons weak to water, or if SpA > Atk
+	|| (set.ability == "Storm Drain" && !isWeak(mon, "Water") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	
 	//
 	// Item Exceptions
@@ -189,8 +199,8 @@ function validateSet(set) {
 	
     // Analytic should be run with min speed
     || (set.ability == "Analytic" && set.speed != "min")
-	// Competitive and As One(Spectrier) should not be run if Atk > SpA
-    || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	// As One(Spectrier), Competitive, Download and Plus should not be run if Atk > SpA
+    || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	
 	//
 	// Other
