@@ -132,6 +132,23 @@ let speeds = [
   '252'
 ]
 
+
+function isWeak(mon, type) {
+  let damageMult = 1;
+  for (const t of mon.types) {
+    const cat = Dex.types.get(t).damageTaken[type];
+    if (cat == 1) {
+      damageMult *= 2;
+    } else if (cat == 2) {
+      damageMult /= 2;
+    } else if (cat == 3) {
+      damageMult *= 0;
+    }
+  }
+  return damageMult > 1
+}
+
+
 function validateSet(set) {
   const mon = Dex.species.get(set.species)
   const item = Dex.items.get(set.item)
