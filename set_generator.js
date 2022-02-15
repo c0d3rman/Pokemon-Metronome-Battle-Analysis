@@ -138,21 +138,21 @@ function validateSet(set) {
   return !(
     !mon.exists
     // Don't use life orb without magic guard
-    || (set.item == "Life Orb" && ability != "Magic Guard")
+    || (set.item == "Life Orb" && set.ability != "Magic Guard")
     // Leppa berry is only viable on imposter
-    || (set.item == "Leppa Berry" && ability != "Imposter")
+    || (set.item == "Leppa Berry" && set.ability != "Imposter")
     // If the item only works for certain Pokemon (e.g. Light Ball) then we should be using one of those
     || (item.itemUser && !item.itemUser.includes(mon.name))
     // Eviolite should only be used on NFEs
-    || (set.item == "Eviolite" && !mon.nfe)
+    || (item.name == "Eviolite" && !mon.nfe)
     // You shouldn't run an NFE unless you're using Eviolite or Light Ball
-    || (!["Eviolite", "Light Ball"].includes(item) && mon.nfe)
+    || (!["Eviolite", "Light Ball"].includes(item.name) && mon.nfe)
     // Flower Veil should only be run on grass types
-    || (ability == "Flower Veil" && !mon.types.includes("Grass"))
+    || (set.ability == "Flower Veil" && !mon.types.includes("Grass"))
     // Analytic should be run with min speed
-    || (ability == "Analytic" && speed != "min")
+    || (set.ability == "Analytic" && set.speed != "min")
     // Imposter should either be run on Blissey or with a species-unique item
-    || (ability == "Imposter" && species != "Blissey" && !["Thick Club", "Light Ball", "Leek", "Stick", "Eviolite"].includes(item))
+    || (set.ability == "Imposter" && set.species != "Blissey" && !["Thick Club", "Light Ball", "Leek", "Stick", "Eviolite"].includes(item.name))
   )
 }
 
