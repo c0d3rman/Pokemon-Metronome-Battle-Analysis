@@ -157,7 +157,7 @@ function validateSet(set) {
     !mon.exists
 	
 	//
-	// Abilities Dependent On Typing
+	// Requires A Particular Type
 	//
 	
 	// Flower Veil should only be run on grass types
@@ -173,10 +173,18 @@ function validateSet(set) {
 	// Aerilate and Delta Stream should only be run on flying types
     || ((set.ability == "Aerilate" || set.ability == "Delta Stream") && !mon.types.includes("Flying"))
 	
+	//
+	// Requires A Particular Type Or Weakness
+	//
+	
 	// Water Bubble and Primordial Sea should only be run on water types, or mons weak to fire
     || ((set.ability == "Water Bubble" || set.ability == "Primordial Sea") && !mon.types.includes("Water") && !isWeak(mon, "Fire"))
 	// Desolate Land should only be run on fire types, or mons weak to water
     || (set.ability == "Desolate Land" && !mon.types.includes("Fire") && !isWeak(mon, "Water"))
+	
+	//
+	// Requires A Particular Weakness
+	//
 	
 	// Flash Fire should only be run on mons weak to fire
 	|| (set.ability == "Flash Fire" && !isWeak(mon, "Fire"))
@@ -184,6 +192,10 @@ function validateSet(set) {
 	|| (set.ability == "Levitate" && !isWeak(mon, "ground"))
 	// Sap Sipper should only be run on mons weak to grass
 	|| (set.ability == "Sap Sipper" && !isWeak(mon, "Grass"))
+	
+	//
+	// Requires A Particular Weakness, Or Special Attack Stat
+	//
 	
 	// Lightning Rod should only be run on mons weak to electric, or if SpA > Atk
 	|| (set.ability == "Lightning Rod" && !isWeak(mon, "Electric") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
@@ -196,7 +208,7 @@ function validateSet(set) {
 	|| (mon.types.includes("Poison") && set.ability == "Pastel Veil")
 	
 	//
-	// Item Exceptions
+	// Special Item Clauses
 	//
 	
 	// If the item only works for certain Pokemon (e.g. Light Ball) then we should be using one of those
@@ -206,11 +218,23 @@ function validateSet(set) {
     // You shouldn't run an NFE unless you're using Eviolite or Light Ball, unless its Scyther
     || ((set.species != "Scyther" && !["Eviolite", "Light Ball"].includes(item.name)) && mon.nfe)
 	
+	//
+	// Life Orb + Magic Guard
+	//
+	
 	// Don't use life orb without magic guard
     || (set.item == "Life Orb" && set.ability != "Magic Guard")
 	
+	//
+	// Stench + King's Rock
+	//
+	
 	// Stench and King's Rock do not stack
 	|| (set.item == "Kings Rock" && set.ability == "Stench")
+	
+	//
+	// Berries etc
+	//
 	
     // Leppa berry is only viable on imposter
     || (set.item == "Leppa Berry" && set.ability != "Imposter")
