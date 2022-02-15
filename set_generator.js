@@ -2,7 +2,7 @@ const {Dex, Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
 
-let species = 'Scyther';
+let species = 'Bulbasaur';
 
 let items = [
   'Weakness Policy',
@@ -37,7 +37,7 @@ let abilities = [
   'Prism Armor',
   'Tinted Lens',
   'Unaware',
-  'Water Bubble', // TODO: only if water type or weak to fire
+  'Water Bubble',
   
   //
   //A-Tier
@@ -47,7 +47,7 @@ let abilities = [
   'As One(Spectrier)',
   'Analytic',
   'Dauntless Shield',
-  'Delta Stream', // TODO: only if mon is flying type
+  'Delta Stream',
   'Desolate Land', // TODO: only if team is weak to water
   'Download', // TODO: only if SpA > Atk
   'Flash Fire', // TODO: only if mon is weak to fire
@@ -154,24 +154,48 @@ function validateSet(set) {
   const item = Dex.items.get(set.item)
   return !(
     !mon.exists
-    // Don't use life orb without magic guard
-    || (set.item == "Life Orb" && set.ability != "Magic Guard")
-    // Leppa berry is only viable on imposter
-    || (set.item == "Leppa Berry" && set.ability != "Imposter")
-    // If the item only works for certain Pokemon (e.g. Light Ball) then we should be using one of those
-    || (item.itemUser && !item.itemUser.includes(mon.name))
-    // Eviolite should only be used on NFEs
-    || (item.name == "Eviolite" && !mon.nfe)
-    // You shouldn't run an NFE unless you're using Eviolite or Light Ball
-    || ((set.species != "Scyther" && !["Eviolite", "Light Ball"].includes(item.name)) && mon.nfe)
-    // Flower Veil should only be run on grass types
+	
+	//
+	// Abilities Dependent On Typing
+	//
+	
+	// Flower Veil should only be run on grass types
     || (set.ability == "Flower Veil" && !mon.types.includes("Grass"))
 	// Aerilate and Delta Stream should only be run on flying types
     || ((set.ability == "Aerilate" || set.ability == "Delta Stream") && !mon.types.includes("Flying"))
+	// Water Bubble should only be run on water types, or mons weak to fire
+    || (set.ability == "Water Bubble" && !mon.types.includes("Water") && !isWeak(mon, "Fire"))
+	// Desolate Land should only be run on fire types, or mons weak to water
+    || (set.ability == "Desolate Land" && !mon.types.includes("Fire") && !isWeak(mon, "Water"))
+	
+	//
+	// Item Exceptions
+	//
+	
+	// If the item only works for certain Pokemon (e.g. Light Ball) then we should be using one of those
+    || (item.itemUser && !item.itemUser.includes(mon.name))
+    // Eviolite should only be used on NFEs
+    || (item.name == "Eviolite" && !mon.nfe)
+    // You shouldn't run an NFE unless you're using Eviolite or Light Ball, unless its Scyther
+    || ((set.species != "Scyther" && !["Eviolite", "Light Ball"].includes(item.name)) && mon.nfe)
+	// Don't use life orb without magic guard
+    || (set.item == "Life Orb" && set.ability != "Magic Guard")
+    // Leppa berry is only viable on imposter
+    || (set.item == "Leppa Berry" && set.ability != "Imposter")
+	
+	//
+	// Abilities Dependent On Stats
+	//
+	
     // Analytic should be run with min speed
     || (set.ability == "Analytic" && set.speed != "min")
 	// Competitive and As One(Spectrier) should not be run if Atk > SpA
     || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	
+	//
+	// Other
+	//
+	
     // Imposter should either be run on Blissey or with a species-unique item
     || (set.ability == "Imposter" && set.species != "Blissey" && !["Thick Club", "Light Ball", "Leek", "Stick", "Eviolite"].includes(item.name))
   )
