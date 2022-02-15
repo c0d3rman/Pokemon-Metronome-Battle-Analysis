@@ -2,7 +2,7 @@ const {Dex, Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
 
-let species = 'Scyther';
+let species = 'Dusclops';
 
 let items = [
   'Weakness Policy',
@@ -269,7 +269,7 @@ function validateSet(set) {
 	// If Spe >= 100, dont run min speed
 	|| (mon.baseStats.spe >= 100 && set.evs.spe == 0)
 	// If Spe <= 60, dont run min speed
-	|| (mon.baseStats.spe <= 60 && set.evs.spe == 252)
+	|| (mon.baseStats.spe <= 60 && set.evs.spe != 0)
 	
 	//
 	// Other
@@ -293,7 +293,7 @@ if (typeof require !== 'undefined' && require.main === module) {
             item: item,
             ability: ability,
             nature: nature,
-            evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: (speed == "0" ? 0 : 255) },
+            evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: (speed == "0" ? 0 : 252) },
             ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: (speed == "0" ? 0 : 31) },
             moves: ['Metronome']
           }
