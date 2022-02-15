@@ -132,43 +132,62 @@ let speeds = [
   'min'
 ]
 
-let sets = []
-for (const item of items) {
-  for (const ability of abilities) {
-    for (const nature of natures) {
-      for (const speed of speeds) {
-        const mon = Dex.species.get(species)
+function validateSet(set) {
+  const mon = Dex.species.get(set.species)
+  const item = Dex.items.get(set.item)
+  return !(
+    !mon.exists
+    // Don't use life orb without magic guard
+    || (set.item == "Life Orb" && ability != "Magic Guard")
+    // Leppa berry is only viable on imposter
+    || (set.item == "Leppa Berry" && ability != "Imposter")
+    // If the item only works for certain Pokemon (e.g. Light Ball) then we should be using one of those
+    || (item.itemUser && !item.itemUser.includes(mon.name))
+    // Eviolite should only be used on NFEs
+    || (set.item == "Eviolite" && !mon.nfe)
+    // You shouldn't run an NFE unless you're using Eviolite or Light Ball
+    || (!["Eviolite", "Light Ball"].includes(item) && mon.nfe)
+    // Flower Veil should only be run on grass types
+    || (ability == "Flower Veil" && !mon.types.includes("Grass"))
+    // Analytic should be run with min speed
+    || (ability == "Analytic" && speed != "min")
+    // Imposter should either be run on Blissey or with a species-unique item
+    || (ability == "Imposter" && species != "Blissey" && !["Thick Club", "Light Ball", "Leek", "Stick", "Eviolite"].includes(item))
+  )
+}
 
-        if (!mon.exists
-          || (item == "Life Orb" && ability != "Magic Guard")
-          || (item == "Leppa Berry" && ability != "Imposter")
-          || (item == "Light Ball" && !species.includes("Pikachu"))
-          || (item == "Eviolite" && !mon.nfe)
-          || (!["Eviolite", "Light Ball"].includes(item) && mon.nfe)
-          || (ability == "Flower Veil" && !mon.types.includes("Grass"))
-          || (ability == "Analytic" && speed != "min")
-          || (ability == "Imposter" && species != "Blissey" && !["Thick Club", "Light Ball", "Leek", "Stick", "Eviolite"].includes(item))
-        ) {
-          continue
+// If we're being run directly (as opposed to imported)
+if (typeof require !== 'undefined' && require.main === module) {
+  let sets = []
+  for (const item of items) {
+    for (const ability of abilities) {
+      for (const nature of natures) {
+        for (const speed of speeds) {
+          const mon = Dex.species.get(species)
+          const set = {
+            species: mon.name,
+            item: item,
+            ability: ability,
+            nature: nature,
+            evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: (speed == "min" ? 0 : 255) },
+            ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: (speed == "min" ? 0 : 31) },
+            moves: ['Metronome']
+          }
+
+          if (validateSet(set)) {
+            sets.push(set)
+          }        
         }
-
-        sets.push({
-          species: mon.name,
-          item: item,
-          ability: ability,
-          nature: nature,
-          evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: (speed == "min" ? 0 : 255) },
-          ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: (speed == "min" ? 0 : 31) },
-          moves: ['Metronome']
-        })
       }
     }
   }
+
+  console.log(`Generated ${sets.length} sets`);
+  fs.writeFile(process.argv[2], sets.map(set => {
+    return "=== [gen8metronomebattle] " + 
+    `${set.species}, ${set.ability}, ${set.item}, ${set.nature}, ${(set.ivs.spe == 0 ? "min" : "neut")}-speed ===\n\n` +
+    Teams.export([set, set]) + "\n\n"
+  }).join(""), () => {})
 }
 
-console.log(`Generated ${sets.length} sets`);
-fs.writeFile(process.argv[2], sets.map(set => {
-  return "=== [gen8metronomebattle] " + 
-  `${set.species}, ${set.ability}, ${set.item}, ${set.nature}, ${(set.ivs.spe == 0 ? "min" : "neut")}-speed ===\n\n` +
-  Teams.export([set, set]) + "\n\n"
-}).join(""), () => {})
+module.exports = {items: items, abilities: abilities: natures: natures, speeds: speeds, validateSet: validateSet}
