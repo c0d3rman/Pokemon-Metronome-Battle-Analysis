@@ -65,15 +65,15 @@ Quiet Nature
 
 === [gen8metronomebattle] Metronome Tournament/Special HO ===
 
-Camerupt-Mega @ Choice Specs  
-Ability: Storm Drain  
+Ampharos-Mega @ Choice Specs  
+Ability: Plus  
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
 IVs: 0 Spe
 Quiet Nature  
 - Metronome  
 
 Ampharos-Mega @ Choice Specs  
-Ability: Competitive  
+Ability: Minus  
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
 IVs: 0 Spe
 Quiet Nature  
