@@ -207,7 +207,7 @@ function validateSet(set) {
 	//
 	
 	// grass types should not use abilities that are a worse flower veil
-	|| (mon.types.includes("Grass") && (set.ability == "Healer" || set.ability == "Overcoat" || set.ability == "Shed Skin" || set.ability == "Shield Dust"))
+	|| (mon.types.includes("Grass") && (set.ability == "Healer" || set.ability == "Overcoat" || set.ability == "Shed Skin" || set.ability == "Shield Dust" || set.ability == "Pastel Veil"))
 	// poison types should not use Pastel Veil
 	|| (mon.types.includes("Poison") && set.ability == "Pastel Veil")
 	
@@ -248,8 +248,8 @@ function validateSet(set) {
 	|| (set.ability == "Magician" && set.item != "Weakness Policy" && item.isBerry != true && set.item != "No Item")
 	// Pickup should only be run with WP or a berry
 	|| (set.ability == "Pickup" && set.item != "Weakness Policy" && item.isBerry != true)
-	// No Item should only be run with Magician, Pickpocket or Pickup
-	|| (set.item == "No Item" && set.ability != "Magician" && set.ability != "Pickpocket")
+	// No Item should only be run with Magician or Pickup
+	|| (set.item == "No Item" && set.ability != "Magician")
 	
 	//
 	// Abilities Dependent On Stats
