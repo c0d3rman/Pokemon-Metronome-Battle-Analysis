@@ -2,7 +2,7 @@ const {Dex, Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
 
-let species = 'Dusclops';
+let species = 'Staraptor';
 
 let items = [
   'Weakness Policy',
@@ -13,7 +13,7 @@ let items = [
   'Leppa Berry',
   'Bright Powder',
   'Lum Berry',
-  'Razor Claw',
+  'Scope Lens',
   'Safety Goggles',
   'Life Orb',
   'Wide Lens',
@@ -257,8 +257,8 @@ function validateSet(set) {
 	
     // Analytic should be run with min speed
     || (set.ability == "Analytic" && set.speed != "min")
-	// As One(Spectrier), Competitive, Download, Plus and Soul Heart should not be run if Atk > SpA
-    || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus" || set.ability == "Soul Heart") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	// Choice Specs, As One(Spectrier), Competitive, Download, Plus and Soul Heart should not be run if Atk > SpA
+    || ((set.item == "Choice Specs" || set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus" || set.ability == "Soul Heart") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	
 	//
 	// Nature Don't Make Sense
