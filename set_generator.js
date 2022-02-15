@@ -268,7 +268,7 @@ function validateSet(set) {
 	|| (mon.baseStats.atk >= 1.5 * mon.baseStats.spa && set.nature == "Quiet" )
 	// If Spe >= 100, dont run min speed
 	|| (mon.baseStats.spe >= 100 && set.evs.spe == 0)
-	// If Spe <= 60, dont run min speed
+	// If Spe <= 60, dont run max speed
 	|| (mon.baseStats.spe <= 60 && set.evs.spe != 0)
 	
 	//
