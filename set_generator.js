@@ -128,8 +128,8 @@ let natures = [
 ]
 
 let speeds = [
-  'neutral',
-  'min'
+  '0',
+  '252'
 ]
 
 function validateSet(set) {
@@ -169,8 +169,8 @@ if (typeof require !== 'undefined' && require.main === module) {
             item: item,
             ability: ability,
             nature: nature,
-            evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: (speed == "min" ? 0 : 255) },
-            ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: (speed == "min" ? 0 : 31) },
+            evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: (speed == "0" ? 0 : 255) },
+            ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: (speed == "0" ? 0 : 31) },
             moves: ['Metronome']
           }
 
@@ -190,4 +190,4 @@ if (typeof require !== 'undefined' && require.main === module) {
   }).join(""), () => {})
 }
 
-module.exports = {items: items, abilities: abilities: natures: natures, speeds: speeds, validateSet: validateSet}
+module.exports = {items: items, abilities: abilities, natures: natures, speeds: speeds, validateSet: validateSet}
