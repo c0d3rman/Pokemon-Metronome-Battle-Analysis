@@ -261,11 +261,16 @@ function validateSet(set) {
     || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus" || set.ability == "Soul Heart") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	
 	//
-	// Nature Doesn't Make Sense
+	// Nature Don't Make Sense
 	//
 	
 	// If Atk >>> SpA, dont run Quiet
 	|| (mon.baseStats.atk >= 1.5 * mon.baseStats.spa && set.nature == "Quiet" )
+	
+	//
+	// EVs Don't Make Sense
+	//
+	
 	// If Spe >= 100, dont run min speed
 	|| (mon.baseStats.spe >= 100 && set.evs.spe == 0)
 	// If Spe <= 60, dont run max speed
