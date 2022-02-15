@@ -172,16 +172,16 @@ Promise.all(promises).then(() => {
     minVal = Math.min(minVal, 100 - maxVal)
     maxVal = Math.max(maxVal, 100 - minVal)
 
-    const strWinMatrix = winMatrix.map((row) => row.map((x) => x.toFixed(1)))    
-    
     // Blank out diagonals in round robin
     if (!isChallengerMode) {
-        strWinMatrix.forEach((row, i) => {
+        winMatrix.forEach((row, i) => {
             if (i < row.length) {
                 row[i] = "-"
             }
         })
     }
+
+    const strWinMatrix = winMatrix.map((row) => row.map((x) => typeof x === "number" ? x.toFixed(1) : x))
     
     // Add labels
     strWinMatrix.forEach((row, i) => row.unshift(i + 1))
@@ -193,8 +193,11 @@ Promise.all(promises).then(() => {
     matprint(strWinMatrix, minVal, maxVal);
 
     console.log("\n\nOverall winrates:\n")
-    const avgRates = challNames.map((name, i) => [name, winMatrix.reduce((sum, row, j) => i == j ? sum : sum + row[i], 0) / (winMatrix.length - 1)]).sort((a, b) => b[1]- a[1])
-    avgRates.forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
+    challNames.map((name, i) => {
+        let l = winMatrix.map(row => row[i]).filter(n => typeof n === "number");
+        return [name, l.reduce((sum, n) => sum + n, 0) / l.length];
+    }).sort((a, b) => b[1]- a[1])
+    .forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
 
     pool.terminate();
 });
