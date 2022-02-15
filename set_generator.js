@@ -2,7 +2,7 @@ const {Dex, Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
 
-let species = 'Combusken';
+let species = 'Scyther';
 
 let items = [
   'Weakness Policy',
@@ -19,7 +19,8 @@ let items = [
   'Wide Lens',
   'Rowap Berry',
   'Jaboca Berry',
-  'Kings Rock'
+  'Kings Rock',
+  'No Item'
 ]
 
 let abilities = [
@@ -79,41 +80,41 @@ let abilities = [
   'Contrary',
   'Dancer',
   'Effect Spore',
-  'Electric Surge', // TODO: only if the mon is electric type
+  'Electric Surge',
   'Flame Body',
   'Full Metal Body',
-  'Galvanize', // TODO: only if mon is electric type
-  'Harvest', // TODO: only if mon is holding a berry
-  'Healer', // TODO: not a grass type, they have veil
-  'Hydration', // TODO: only if teammate has Primordial Sea
-  'Illusion', // TODO: Slot 1 only
-  'Innards Out', // TODO: the shit chansey set only
+  'Galvanize',
+  'Harvest',
+  'Healer',
+  //'Hydration', // TODO: only if teammate has Primordial Sea
+  //'Illusion', // TODO: Slot 1 only
+  //'Innards Out', // TODO: the shit chansey set only
   'Infiltrator',
   'Intimidate',
-  'Levitate', // TODO: only if mon is weak to ground
-  'Liquid Voice', // TODO: only if teammate has storm drain, yes this works for perish song btw
+  'Levitate',
+  //'Liquid Voice', // TODO: only if teammate has storm drain, yes this works for perish song btw
   'Long Reach',
-  'Magician', // TODO: only if WP or no item
+  'Magician',
   'Neuroforce',
   'No Guard',
-  'Normalize', // TODO: only if mon is normal type
-  'Overcoat', // TODO: only if the mon isnt grass type
-  'Pastel Veil', // TODO: only if mon is NOT poison type
-  'Pickup', // TODO: only if WP, Rowap or Jaboca on both mons
+  'Normalize',
+  'Overcoat',
+  'Pastel Veil',
+  'Pickup',
   'Poison Point',
   'Poison Touch',
   'Power Spot',
   'Punk Rock',
-  'Sap Sipper', // TODO: only if mon is weak to grass
-  'Scrappy', // TODO: only if mon is normal or fighting type
+  'Sap Sipper',
+  'Scrappy',
   'Shadow Shield',
-  'Shed Skin', // TODO: only if the mon isnt grass type
-  'Shield Dust', // TODO: only if the mon isnt grass type
+  'Shed Skin',
+  'Shield Dust',
   'Sniper',
-  'Soul Heart', // TODO: only if SpA > Atk
+  'Soul Heart',
   'Soundproof',
-  'Steely Spirit', // TODO: only if mon is steel type
-  'Stench', // TODO: only if mon is NOT holding a Kings Rock
+  'Steely Spirit',
+  'Stench',
   'Super Luck',
   'Synchronize',
   'Truant', //one way to win the PP war, I suppose
@@ -165,18 +166,34 @@ function validateSet(set) {
 	|| (set.ability == "Pixilate" && !mon.types.includes("Fairy"))
 	// Refrigerate should only be run on ice types
 	|| (set.ability == "Refrigerate" && !mon.types.includes("Ice"))
+	// Galvanize should only be run on electric types
+	|| (set.ability == "Galvanize" && !mon.types.includes("Electric"))
+	// Normalize should only be run on normal types
+	|| (set.ability == "Normalize" && !mon.types.includes("Normal"))
 	// Aerilate and Delta Stream should only be run on flying types
     || ((set.ability == "Aerilate" || set.ability == "Delta Stream") && !mon.types.includes("Flying"))
+	
 	// Water Bubble and Primordial Sea should only be run on water types, or mons weak to fire
     || ((set.ability == "Water Bubble" || set.ability == "Primordial Sea") && !mon.types.includes("Water") && !isWeak(mon, "Fire"))
 	// Desolate Land should only be run on fire types, or mons weak to water
     || (set.ability == "Desolate Land" && !mon.types.includes("Fire") && !isWeak(mon, "Water"))
+	
 	// Flash Fire should only be run on mons weak to fire
 	|| (set.ability == "Flash Fire" && !isWeak(mon, "Fire"))
+	// Levitate should only be run on mons weak to ground
+	|| (set.ability == "Levitate" && !isWeak(mon, "ground"))
+	// Sap Sipper should only be run on mons weak to grass
+	|| (set.ability == "Sap Sipper" && !isWeak(mon, "Grass"))
+	
 	// Lightning Rod should only be run on mons weak to electric, or if SpA > Atk
 	|| (set.ability == "Lightning Rod" && !isWeak(mon, "Electric") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	// Storm Drain should only be run on mons weak to water, or if SpA > Atk
 	|| (set.ability == "Storm Drain" && !isWeak(mon, "Water") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	
+	// grass types should not use abilities that are a worse flower veil
+	|| (mon.types.includes("Grass") && (set.ability == "Healer" || set.ability == "Overcoat" || set.ability == "Shed Skin" || set.ability == "Shield Dust")))
+	// poison types should not use Pastel Veil
+	|| (mon.types.includes("Poison") && set.ability == "Pastel Veil")
 	
 	//
 	// Item Exceptions
@@ -188,10 +205,23 @@ function validateSet(set) {
     || (item.name == "Eviolite" && !mon.nfe)
     // You shouldn't run an NFE unless you're using Eviolite or Light Ball, unless its Scyther
     || ((set.species != "Scyther" && !["Eviolite", "Light Ball"].includes(item.name)) && mon.nfe)
+	
 	// Don't use life orb without magic guard
     || (set.item == "Life Orb" && set.ability != "Magic Guard")
+	
+	// Stench and King's Rock do not stack
+	|| (set.item == "Kings Rock" && set.ability == "Stench")
+	
     // Leppa berry is only viable on imposter
     || (set.item == "Leppa Berry" && set.ability != "Imposter")
+	// Harvest should only be run with a berry
+	|| (set.ability == "Harvest" && item.isBerry != true)
+	// Magician should only be run with WP, no item or a berry
+	|| (set.ability == "Magician" && set.item != "Weakness Policy" && item.isBerry != true && set.item != "No Item")
+	// Pickup should only be run with WP or a berry
+	|| (set.ability == "Pickup" && set.item != "Weakness Policy" && item.isBerry != true)
+	// No Item should only be run with Magician, Pickpocket or Pickup
+	|| (set.item == "No Item" && set.ability != "Magician" && set.ability != "Pickpocket")
 	
 	//
 	// Abilities Dependent On Stats
@@ -199,8 +229,8 @@ function validateSet(set) {
 	
     // Analytic should be run with min speed
     || (set.ability == "Analytic" && set.speed != "min")
-	// As One(Spectrier), Competitive, Download and Plus should not be run if Atk > SpA
-    || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	// As One(Spectrier), Competitive, Download, Plus and Soul Heart should not be run if Atk > SpA
+    || ((set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus" || set.ability == "Soul Heart") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
 	
 	//
 	// Other
