@@ -13,7 +13,7 @@ let items = [
   'Leppa Berry',
   'Bright Powder',
   'Lum Berry',
-  'Scope Lens',
+  'Razor Claw',
   'Safety Goggles',
   'Life Orb',
   'Wide Lens',
