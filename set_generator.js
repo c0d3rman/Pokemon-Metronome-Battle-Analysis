@@ -5,21 +5,21 @@ const fs = require('fs')
 let species = 'Staraptor';
 
 let items = [
-  'Weakness Policy',
-  'Choice Band',
-  'Choice Specs',
-  'Kee Berry',
-  'Eviolite',
-  'Leppa Berry',
-  'Bright Powder',
-  'Lum Berry',
-  'Razor Claw',
-  'Safety Goggles',
-  'Life Orb',
-  'Wide Lens',
-  'Rowap Berry',
-  'Jaboca Berry',
-  'Kings Rock',
+  'Weakness Policy', // +2 SpA + Atk when hit SE
+  'Choice Band', // x1.5 Atk
+  'Choice Specs', // x1.5 SpA
+  'Kee Berry', // +1 Def
+  'Eviolite', // x1.5 Def + SpD if NFE
+  'Leppa Berry', // +5 PP
+  'Bright Powder', // Opponents 0.9x Acc
+  'Lum Berry', // Cure any status
+  'Razor Claw', // +1 Crit Chance
+  'Safety Goggles', // Immune to weather damage and powder moves
+  'Life Orb', // x1.3 Dmg, -10% HP per attack
+  'Wide Lens', // 1.3x Acc
+  'Rowap Berry', // -1/8 enemy HP when hit physically
+  'Jaboca Berry', // -1/8 enemy HP when hit specially
+  'Kings Rock', // 10% flinch chance
   'No Item'
 ]
 
@@ -27,110 +27,111 @@ let abilities = [
   //
   //S-Tier 
   //
-  'Comatose',
-  'Competitive',
-  'Defiant',
-  'Flower Veil',
-  'Intrepid Sword',
-  'Magic Bounce',
-  'Magic Guard',
-  'Mold Breaker',
-  'Prism Armor',
-  'Tinted Lens',
-  'Unaware',
-  'Water Bubble',
+  'Comatose', // immune to status, considered asleep
+  'Competitive', // +2 SpA on stat drop
+  'Defiant', // +2 Atk on stat drop
+  'Flower Veil', // grass types are immune to stat drops and status
+  'Intrepid Sword', // +1 Atk on switch-in
+  'Magic Bounce', // most status moves "bounce" off and hit user
+  'Magic Guard', // immune to indirect Dmg
+  'Mold Breaker', // moves ignore abilities
+  'Prism Armor', // take 0.75x Dmg from SE attacks, ignores Mold Breaker
+  'Tinted Lens', // NVE attacks do 2x Dmg
+  'Unaware', // ignore opponents stat changes during attacks
+  'Water Bubble', // water attacks do 2x Dmg, you resist fire and are immune to burn
   
   //
   //A-Tier
   //
-  'Aerilate',
-  'As One(Glastrier)',
-  'As One(Spectrier)',
-  'Analytic',
-  'Dauntless Shield',
-  'Delta Stream',
-  'Desolate Land',
-  'Download',
-  'Flash Fire',
-  'Friend Guard',
-  'Ice Scales',
-  'Imposter',
-  'Lightning Rod',
-  'Mirror Armor',
-  'Misty Surge',
-  'Mummy',
-  'Pixilate',
-  'Plus',
-  'Primordial Sea',
-  'Refrigerate',
-  'Serene Grace',
-  'Sheer Force',
-  'Simple',
-  'Storm Drain',
-  'Thick Fat',
-  'Trace',
+  'Aerilate', // normal moves are now flying type and 1.2x power
+  'As One(Glastrier)', // opponent cannot use berries, +1 Atk on KO
+  'As One(Spectrier)', // opponent cannot use berries, +1 SpA on KO
+  'Analytic', // x1.3 power when moving last
+  'Dauntless Shield', // +1 Def on switch-in
+  'Delta Stream', // overrides all weather, flying type weaknesses are ignored
+  'Desolate Land', // permanent sun, water attacks fail
+  'Download', // +1 Atk or SpA, depending on opponents defensive stats
+  'Flash Fire', // immunity to fire, fire moves 1.5x power when hit by a fire move
+  'Friend Guard', // Ally takes 0.75x Dmg
+  'Ice Scales', // 2x SpD
+  'Imposter', // transform into opposing pokemon on switch-in
+  'Lightning Rod', // immune to electric, +1 SpA when an electric attack is used
+  'Mirror Armor', // stat drops are reflected onto the user
+  'Misty Surge', // misty terrain on switch-in
+  'Mummy', // pokemon who make contact heve their ability replaced with this one
+  'Pixilate', // normal moves are now fairy type and 1.2x power 
+  'Plus', // if ally is Plus, 1.5x SpA
+  'Primordial Sea', // permanent rain, fire type attacks fail
+  'Refrigerate', // normal moves are now ice type and 1.2x power
+  'Serene Grace', // secondary effects are twice as likely
+  'Sheer Force', // if a move has a secondary effect, 1.3x power and ignore the effect.
+  'Simple', // stat changes are doubled
+  'Storm Drain', // immune to water, +1 SpA when a water attack is used
+  'Thick Fat', // resist fire and ice
+  'Trace', // copies opposing pokemons ability
   
   //
   //B-Tier and lower
   //
-  'Air Lock',
-  'Bulletproof',
-  'Compound Eyes',
-  'Cute Charm',
-  'Contrary',
-  'Dancer',
-  'Effect Spore',
-  'Electric Surge',
-  'Flame Body',
-  'Full Metal Body',
-  'Galvanize',
-  'Harvest',
-  'Healer',
+  'Air Lock', // removes all weather effects
+  'Bulletproof', // immune to all ballistic moves
+  'Compound Eyes', // 1.3x Acc
+  'Cute Charm', // if opposite gender, 30% chance of causing infatuation when hit by a contact move
+  'Contrary', // stat changes are reversed
+  'Dancer', // copies all dance moves
+  'Effect Spore', // 30% chance of random status when hit by a contact move
+  'Electric Surge', // electric terrain on switch-in
+  'Flame Body', // 30% chance of burn when hit by a contact move
+  'Full Metal Body', // immune to stat drops by other pokemon
+  'Galvanize', // normal moves are now electric type and 1.2x power
+  'Harvest', // 50% chance to restore a used berry, 100% in sun
+  'Healer', // 30% to cure allys status
+  'Infiltrator', // ignores mist, safeguard, sub and screens
+  'Intimidate', // -1 Opponents Atk on switch-in
+  'Levitate', // immune to ground moves
+  'Long Reach', // contact moves no longer make contact
+  'Magician', // if no item, steal opponents on contact
+  'Neuroforce', // SE attacks 1.25x power
+  'No Guard', // moves cannot miss, enemies cannot miss you
+  'Normalize', // all moves are normal type, 1.2x power if type was changed
+  'Overcoat', // immune to weather damage and powder moves
+  'Pastel Veil', // immune to poison
+  'Pickup', // if no item, picks up one used by ally
+  'Poison Point', // 30% chance of poisoning enemy when hit by a contact move
+  'Poison Touch', // 30% chance of poisoning enemy on contact
+  'Power Spot', // ally has 1.3x power
+  'Punk Rock', // recieve 0.5x Dmg from sound moves, deal 1.3x Dmg with sound moves
+  'Sap Sipper', // immune to grass, +1 Atk when hit by a grass attack
+  'Scrappy', // can hit ghosts with normal and fighting type attacks
+  'Shadow Shield', // take 0.5x Dmg at full health
+  'Shed Skin', // 33% chance of curing status every turn
+  'Shield Dust', // immune to secondary effects
+  'Sniper', // crits do 1.5x usual Dmg
+  'Soul Heart', // when a mon faints, +1 SpA
+  'Soundproof', // immune to sound moves
+  'Steely Spirit', // this pokemon and its ally do 1.5x Dmg with steel type moves
+  'Stench', // 10% flinch chance
+  'Super Luck', // +1 crit chance
+  'Synchronize', // when statused, opponent is too
+  'Truant', //one way to win the PP war, I suppose
+  'Wonder Skin' // status moves have 50% accuracy against you
+  
   //'Hydration', // TODO: only if teammate has Primordial Sea
   //'Illusion', // TODO: Slot 1 only
   //'Innards Out', // TODO: the shit chansey set only
-  'Infiltrator',
-  'Intimidate',
-  'Levitate',
   //'Liquid Voice', // TODO: only if teammate has storm drain, yes this works for perish song btw
-  'Long Reach',
-  'Magician',
-  'Neuroforce',
-  'No Guard',
-  'Normalize',
-  'Overcoat',
-  'Pastel Veil',
-  'Pickup',
-  'Poison Point',
-  'Poison Touch',
-  'Power Spot',
-  'Punk Rock',
-  'Sap Sipper',
-  'Scrappy',
-  'Shadow Shield',
-  'Shed Skin',
-  'Shield Dust',
-  'Sniper',
-  'Soul Heart',
-  'Soundproof',
-  'Steely Spirit',
-  'Stench',
-  'Super Luck',
-  'Synchronize',
-  'Truant', //one way to win the PP war, I suppose
-  'Wonder Skin'
 ]
 
 let natures = [
-  'Brave',
-  'Quiet',
-  'Relaxed',
-  'Sassy'
+  'Brave', // +Atk - Spe
+  'Quiet', // +SpA -Spe
+  'Relaxed', // +Def - Spe
+  'Sassy' // +SpD -Spe
 ]
 
 let speeds = [
-  '0',
-  '252'
+  '0', // min
+  '252' // max
 ]
 
 
