@@ -1,8 +1,30 @@
 const {Dex, Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
+// Parse command line args
+let species;
+try {
+    args = process.argv.slice(2)
+    if (args.length < 1 || args.length > 2) {
+        throw new Error("Incorrect number of arguments");
+    }
+	
+	if (args.length == 1)
+	{
+	  species = 'Regirock';
+	}
+	else
+	{
+	  species = args[1].toString();
+	}
 
-let species = 'Staraptor';
+} catch (e) {
+    console.log(e)
+    console.log(`Example usage:
+\t\tnode set_generator.js test_teams.txt Cresselia
+`);
+    process.exit();
+}
 
 let items = [
   'Weakness Policy', // +2 SpA + Atk when hit SE
@@ -154,15 +176,15 @@ function isWeak(mon, type) {
 function validateSet(set) {
   const mon = Dex.species.get(set.species)
   const item = Dex.items.get(set.item)
+  
   return !(
-    !mon.exists
-	
+  
 	//
 	// Requires A Particular Type
 	//
 	
 	// Flower Veil should only be run on grass types
-    || (set.ability == "Flower Veil" && !mon.types.includes("Grass"))
+    (set.ability == "Flower Veil" && !mon.types.includes("Grass"))
 	// Pixilate should only be run on fairy types
 	|| (set.ability == "Pixilate" && !mon.types.includes("Fairy"))
 	// Refrigerate should only be run on ice types
@@ -289,11 +311,22 @@ function validateSet(set) {
 // If we're being run directly (as opposed to imported)
 if (typeof require !== 'undefined' && require.main === module) {
   let sets = []
+  
+  // if the species isnt valid, sub in a placeholder mon
+  if (!Dex.species.get(species).exists)
+  {
+	console.log('Invalid Pokemon name, using Regirock instead')
+	species = 'Regirock'
+  }
+  
+  // this was moved here so its only done once, its a const anyways
+  const mon = Dex.species.get(species)
+  
   for (const item of items) {
     for (const ability of abilities) {
       for (const nature of natures) {
         for (const speed of speeds) {
-          const mon = Dex.species.get(species)
+		  
           const set = {
             species: mon.name,
             item: item,
