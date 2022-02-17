@@ -244,7 +244,7 @@ function validateSet(set) {
     // Eviolite should only be used on NFEs
     || (item.name == "Eviolite" && !mon.nfe)
     // You shouldn't run an NFE unless you're using Eviolite or Light Ball, unless its Scyther
-    || ((set.species != "Scyther" && !["Eviolite", "Light Ball"].includes(item.name)) && mon.nfe)
+    || ((set.species != "Scyther" && set.species != "Porygon2" && !["Eviolite", "Light Ball"].includes(item.name)) && mon.nfe)
 	
 	//
 	// Life Orb + Magic Guard
