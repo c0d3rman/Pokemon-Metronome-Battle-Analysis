@@ -145,6 +145,7 @@ let abilities = [
 ]
 
 let natures = [
+  'Adamant', // +Atk -SpA
   'Brave', // +Atk - Spe
   'Quiet', // +SpA -Spe
   'Relaxed', // +Def - Spe
@@ -289,6 +290,8 @@ function validateSet(set) {
 	
 	// If Atk >>> SpA, dont run Quiet
 	|| (mon.baseStats.atk >= 1.5 * mon.baseStats.spa && set.nature == "Quiet" )
+	// If SpA >>> Atk, dont run Adamant
+	|| (mon.baseStats.spa >= 1.5 * mon.baseStats.atk && set.nature == "Adamant" )
 	
 	//
 	// EVs Don't Make Sense
@@ -298,6 +301,11 @@ function validateSet(set) {
 	|| (mon.baseStats.spe >= 100 && set.evs.spe == 0)
 	// If Spe <= 60, dont run max speed
 	|| (mon.baseStats.spe <= 60 && set.evs.spe != 0)
+	
+	//
+	// Banned Combos
+	//
+	|| (set.ability == "Harvest" && (set.item == "Jaboca Berry" || set.item == "Rowap Berry"))
 	
 	//
 	// Other
