@@ -39,6 +39,12 @@ Challenger mode:\tnode sim.js meta_teams.txt sample_teams.txt 10
 // Load all teams
 const validator = new TeamValidator('gen8metronomebattle');
 function loadTeams(file) {
+    file = file.trim() + "\n\n\n";
+
+    if (file.match(/(^=== \[gen8metronomebattle\] ([^\n]*?) ===\n(.+?)\n\n\n)*/gms)[0] != file) {
+        console.log("*** WARNING: a teams file seems to be invalid\n")
+    }
+
     return [...file
     .matchAll(/^=== \[gen8metronomebattle\] ([^\n]*?) ===\n(.+?)\n\n\n/gms)]
     .reduce((dict, match) => {
