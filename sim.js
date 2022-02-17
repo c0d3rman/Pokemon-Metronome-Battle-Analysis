@@ -1,4 +1,4 @@
-const {matprint, getColor, loadTeams, loadFile} = require('./util')
+const {matprint, getColor, loadTeams, loadFile, Scheduler} = require('./util')
 const cliProgress = require('cli-progress');
 const workerpool = require('workerpool');
 
@@ -48,46 +48,11 @@ ${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`
 const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
 const totalTrials = trials * oppNames.length * (isChallengerMode ? challNames.length : (challNames.length - 1) / 2);
 pbar.start(totalTrials, 0);
-let winMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.length).fill(0));
-const pool = workerpool.pool(__dirname + '/simWorker.js'); // Worker pool for multithreading
 
-// This scheduler makes sure we don't fire off more than 10,000 promises at a time to avoid memory issues
-// If too many promises are "in flight", the loop that fires them will simply wait
-// It's very fragile and not resilient to multiple consumers calling isReady and isDone so be careful
-// This doesn't define the number of battles actually running – that's workerpool, and it's only a single-digit number (based on your CPUs)
-const scheduler = {
-    count: 0,
-    max: 10000,
-    resolve: null,
-    schedule: function(promise) {
-        this.count++;
-        const self = this;
-        promise.then(() => {
-            self.count--;
-            if (self.resolve) self.resolve();
-        });
-    },
-    isReady: function() {
-        const self = this;
-        return new Promise((resolve, reject) => {
-            if (self.count <= self.max) {
-                resolve();
-            } else {
-                self.resolve = resolve;
-            }
-        });
-    },
-    isDone: function() {
-        const self = this;
-        return new Promise((resolve, reject) => {
-            if (self.count == 0) {
-                resolve();
-            } else {
-                self.resolve = () => { if (self.count == 0) resolve(); }
-            }
-        });
-    }
-};
+let winMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.length).fill(0));
+
+const pool = workerpool.pool(__dirname + '/simWorker.js'); // Worker pool for multithreading
+const scheduler = new Scheduler(); // Scheduler to make sure we don't have too many promises "in flight" at once, to avoid memory issues
 
 // The simulation dispatcher (see simWorker.js for the actual battle code)
 (async () => {
