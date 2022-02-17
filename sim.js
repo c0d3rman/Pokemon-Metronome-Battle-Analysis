@@ -32,15 +32,15 @@ if (isChallengerMode) {
     console.log(
 `${challNames.length} challengers each facing off against all ${oppNames.length} opponents ${trials} times
 Challengers:
-${challNames.forEach((x, i) => console.log(`  ${i+1}\t${x}`))}
+${challNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}
 Opponents:
-${oppNames.forEach((x, i) => console.log(`  ${i+1}\t${x}`))}`
+${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`
     );
 } else {
     console.log(
 `Round robin of ${oppNames.length} teams with each pair facing off ${trials} times
 Teams:
-${oppNames.forEach((x, i) => console.log(`  ${i+1}\t${x}`))}`
+${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`
     );
 }
 
