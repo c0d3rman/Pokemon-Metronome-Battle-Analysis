@@ -174,8 +174,6 @@ const trialsPerBatch = 10000;
 // Worker pool for multithreading
 const pool = workerpool.pool(__dirname + '/simWorker.js');
 
-let counter = 0;
-
 
 (async () => {
 	while (true) {
@@ -233,6 +231,3 @@ let counter = 0;
 			)
 	}
 })();
-
-
-

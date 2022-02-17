@@ -15,7 +15,8 @@ Challenger mode:\tnode sim.js meta_teams.txt sample_teams.txt 10
 const isChallengerMode = (process.argv.length - 2 == 3);
 let trials = isChallengerMode ? process.argv[4] : process.argv[3];
 if (trials.match(/\D/) || parseInt(trials) <= 0) {
-    throw new Error("Invalid number of trials");
+    console.log("Invalid number of trials");
+    process.exit();
 }
 trials = parseInt(trials)
 
