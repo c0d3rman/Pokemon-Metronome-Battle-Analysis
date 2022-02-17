@@ -92,35 +92,6 @@ if (isChallengerMode) {
     oppNames.forEach((x, i) => console.log(`  ${i+1}\t${x}`));
 }
 
-// Progress bar
-const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
-pbar.start(totalTrials, 0);
-
-// Worker pool for multithreading
-const pool = workerpool.pool(__dirname + '/simWorker.js');
-
-// The simulation dispatcher (see the actual battle code in simWorker.js)
-promises.push((async () => {
-    for (let trial = 0; trial < trials; trial++) {
-        for (let i = 0; i < oppNames.length; i++) {
-            let opponent = oppTeams[oppNames[i]]
-            for (let j = (isChallengerMode ? 0 : i + 1); j < challNames.length; j++) {
-                let challenger = challTeams[challNames[j]]
-                let promise = pool.exec('simBattle', [challenger, opponent])
-                promise.then((winner) => {
-                    if (winner == "P1") {
-                        winMatrix[i][j]++
-                    } else if (!isChallengerMode) {
-                        winMatrix[j][i]++
-                    }
-                    pbar.increment();
-                });
-                promises.push(promise)
-            }
-        }
-    }
-})());
-
 // Function to colorize numbers from red to green
 function getColor(n, min, max) {
     if (n < min || n > max) {
@@ -161,43 +132,114 @@ function matprint(mat, min, max) {
     });
 }
 
-// After all sims are done, calculate and display results
-Promise.all(promises).then(() => {
-    pbar.stop();
+// Progress bar
+const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
+pbar.start(totalTrials, 0);
 
-    winMatrix = winMatrix.map((row) => row.map((x) => (x / trials * 100)))
+// Worker pool for multithreading
+const pool = workerpool.pool(__dirname + '/simWorker.js');
 
-    let minVal = Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
-    let maxVal = Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
-    minVal = Math.min(minVal, 100 - maxVal)
-    maxVal = Math.max(maxVal, 100 - minVal)
-
-    // Blank out diagonals in round robin
-    if (!isChallengerMode) {
-        winMatrix.forEach((row, i) => {
-            if (i < row.length) {
-                row[i] = "-"
+// This scheduler makes sure we don't fire off more than 10,000 promises at a time to avoid memory issues
+// If too many promises are "in flight", the loop that fires them will simply wait
+// It's very fragile and not resilient to multiple consumers calling isReady and isDone so be careful
+const scheduler = {
+    count: 0,
+    max: 10000,
+    resolve: null,
+    schedule: function(promise) {
+        this.count++;
+        const self = this;
+        promise.then(() => {
+            self.count--;
+            if (self.resolve) {
+                self.resolve();
             }
-        })
+        });
+    },
+    isReady: function() {
+        const self = this;
+        return new Promise((resolve, reject) => {
+            if (self.count <= self.max) {
+                resolve();
+            } else {
+                self.resolve = resolve;
+            }
+        });
+    },
+    isDone: function() {
+        const self = this;
+        return new Promise((resolve, reject) => {
+            if (self.count == 0) {
+                resolve();
+            } else {
+                self.resolve = () => {
+                    if (self.count == 0) {
+                        resolve();
+                    }
+                }
+            }
+        });
     }
+};
 
-    const strWinMatrix = winMatrix.map((row) => row.map((x) => typeof x === "number" ? x.toFixed(1) : x))
-    
-    // Add labels
-    strWinMatrix.forEach((row, i) => row.unshift(i + 1))
-    strWinMatrix.unshift(Array.from(Array(challNames.length + 1).keys()))
-    strWinMatrix[0][0] = "" // Fix corner
+// The simulation dispatcher (see the actual battle code in simWorker.js)
+(async () => {
+    for (let trial = 0; trial < trials; trial++) {
+        for (let i = 0; i < oppNames.length; i++) {
+            let opponent = oppTeams[oppNames[i]]
+            for (let j = (isChallengerMode ? 0 : i + 1); j < challNames.length; j++) {
+                let challenger = challTeams[challNames[j]]
 
-    console.log("Winrate for challenger (column) vs opponent (row):")
-    console.log(`E.g. top right cell is how often challenger #${challNames.length} beats opponent #1`)
-    matprint(strWinMatrix, minVal, maxVal);
+                await scheduler.isReady();
 
-    console.log("\n\nOverall winrates:\n")
-    challNames.map((name, i) => {
-        let l = winMatrix.map(row => row[i]).filter(n => typeof n === "number");
-        return [name, l.reduce((sum, n) => sum + n, 0) / l.length];
-    }).sort((a, b) => b[1]- a[1])
-    .forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
+                scheduler.schedule(pool.exec('simBattle', [challenger, opponent]).then((winner) => {
+                    if (winner == "P1") {
+                        winMatrix[i][j]++
+                    } else if (!isChallengerMode) {
+                        winMatrix[j][i]++
+                    }
+                    pbar.increment();
+                }));
+            }
+        }
+    }
+})()
+// At this point we are done scheduling sims but not necessarily running them
+.then(() => {
+    // After all sims are done running, calculate and display results
+    scheduler.isDone().then(() => {
+        pbar.stop();
 
-    pool.terminate();
+        winMatrix = winMatrix.map((row) => row.map((x) => (x / trials * 100)))
+
+        let minVal = Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
+        let maxVal = Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
+        minVal = Math.min(minVal, 100 - maxVal)
+        maxVal = Math.max(maxVal, 100 - minVal)
+
+        // Blank out diagonals in round robin
+        if (!isChallengerMode) {
+            winMatrix.forEach((row, i) => { if (i < row.length) row[i] = "-"; })
+        }
+
+        const strWinMatrix = winMatrix.map((row) => row.map((x) => typeof x === "number" ? x.toFixed(1) : x))
+        
+        // Add labels
+        strWinMatrix.forEach((row, i) => row.unshift(i + 1))
+        strWinMatrix.unshift(Array.from(Array(challNames.length + 1).keys()))
+        strWinMatrix[0][0] = "" // Fix corner
+
+        console.log("Winrate for challenger (column) vs opponent (row):")
+        console.log(`E.g. top right cell is how often challenger #${challNames.length} beats opponent #1`)
+        matprint(strWinMatrix, minVal, maxVal);
+
+        console.log("\n\nOverall winrates:\n")
+        challNames.map((name, i) => {
+            let l = winMatrix.map(row => row[i]).filter(n => typeof n === "number");
+            return [name, l.reduce((sum, n) => sum + n, 0) / l.length];
+        }).sort((a, b) => b[1]- a[1])
+        .forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
+
+        pool.terminate();
+    });
 });
