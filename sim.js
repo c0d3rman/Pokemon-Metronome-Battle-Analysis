@@ -1,7 +1,7 @@
+const {matprint, getColor} = require('./util')
 const {Teams, TeamValidator} = require('./pokemon-showdown');
 const fs = require('fs');
 const cliProgress = require('cli-progress');
-const chalk = require('chalk');
 const workerpool = require('workerpool');
 
 
@@ -90,46 +90,6 @@ if (isChallengerMode) {
     console.log(`Round robin of ${oppNames.length} teams with each pair facing off ${trials} times`);
     console.log(`Teams:`);
     oppNames.forEach((x, i) => console.log(`  ${i+1}\t${x}`));
-}
-
-// Function to colorize numbers from red to green
-function getColor(n, min, max) {
-    if (n < min || n > max) {
-        return chalk.yellow;
-    }
-    if (min == max) {
-        return chalk.white;
-    }
-
-    n = (n - min) / (max - min);
-
-    if (n < 0.5) {
-        return chalk.rgb(255, Math.round(255 * n * 2), Math.round(255 * n * 2));
-    } else {
-        return chalk.rgb(Math.round(255 * (1 - n) * 2), 255, Math.round(255 * (1 - n) * 2));
-    }
-}
-
-// Function for pretty-printing matrices
-// Modified from https://gist.github.com/lbn/3d6963731261f76330af
-function matprint(mat, min, max) {
-    let shape = [mat.length, mat[0].length];
-    function col(mat, i) {
-        return mat.map(row => row[i]);
-    }
-    let colMaxes = [];
-    for (let i = 0; i < shape[1]; i++) {
-        colMaxes.push(Math.max.apply(null, col(mat, i).map(n => n.toString().length)));
-    }
-
-    mat.forEach((row, i) => {
-        console.log.apply(null, row.map((val, j) => {
-            let n = parseFloat(val.toString());
-            return new Array(colMaxes[j]-val.toString().length+1).join(" ") +
-                ((Number.isNaN(n) || i == 0 || j == 0) ? val.toString() : getColor(n, min, max)(val.toString()))
-            + "  ";
-        }));
-    });
 }
 
 // Progress bar
@@ -231,7 +191,10 @@ const scheduler = {
 
         console.log("Winrate for challenger (column) vs opponent (row):")
         console.log(`E.g. top right cell is how often challenger #${challNames.length} beats opponent #1`)
-        matprint(strWinMatrix, minVal, maxVal);
+        matprint(strWinMatrix, (val, i, j) => {
+            let n = parseFloat(val);
+            return (Number.isNaN(n) || i == 0 || j == 0) ? val : getColor(n, minVal, maxVal)(val);
+        });
 
         console.log("\n\nOverall winrates:\n")
         challNames.map((name, i) => {
