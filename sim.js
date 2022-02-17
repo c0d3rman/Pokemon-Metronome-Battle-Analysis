@@ -80,11 +80,9 @@ const oppTeams = loadTeams(opponentsFile)
 const challTeams = (isChallengerMode ? loadTeams(challengersFile) : oppTeams)
 
 // Simulation preamble and setup
-const oppNames = Object.keys(oppTeams);
+const oppNames = Object.keys(oppTeams); // Ensure a consistent ordering of keys by just saving them
 const challNames = Object.keys(challTeams);
-const promises = [];
 let winMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.length).fill(0));
-const totalTrials = trials * oppNames.length * (isChallengerMode ? challNames.length : (challNames.length - 1) / 2)
 
 if (isChallengerMode) {
     console.log(`${challNames.length} challengers each facing off against all ${oppNames.length} opponents ${trials} times`);
@@ -100,7 +98,7 @@ if (isChallengerMode) {
 
 // Progress bar
 const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
-pbar.start(totalTrials, 0);
+pbar.start(trials * oppNames.length * (isChallengerMode ? challNames.length : (challNames.length - 1) / 2), 0);
 
 // Worker pool for multithreading
 const pool = workerpool.pool(__dirname + '/simWorker.js');
@@ -117,9 +115,7 @@ const scheduler = {
         const self = this;
         promise.then(() => {
             self.count--;
-            if (self.resolve) {
-                self.resolve();
-            }
+            if (self.resolve) self.resolve();
         });
     },
     isReady: function() {
@@ -138,11 +134,7 @@ const scheduler = {
             if (self.count == 0) {
                 resolve();
             } else {
-                self.resolve = () => {
-                    if (self.count == 0) {
-                        resolve();
-                    }
-                }
+                self.resolve = () => { if (self.count == 0) resolve(); }
             }
         });
     }
@@ -178,6 +170,7 @@ const scheduler = {
 
         winMatrix = winMatrix.map((row) => row.map((x) => (x / trials * 100)))
 
+        // Calculate min and max vals for red-green coloring
         let minVal = Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
         let maxVal = Math.max(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
         minVal = Math.min(minVal, 100 - maxVal)
@@ -188,13 +181,13 @@ const scheduler = {
             winMatrix.forEach((row, i) => { if (i < row.length) row[i] = "-"; })
         }
 
-        const strWinMatrix = winMatrix.map((row) => row.map((x) => typeof x === "number" ? x.toFixed(1) : x))
-        
         // Add labels
+        const strWinMatrix = winMatrix.map((row) => row.map((x) => typeof x === "number" ? x.toFixed(1) : x))
         strWinMatrix.forEach((row, i) => row.unshift(i + 1))
         strWinMatrix.unshift(Array.from(Array(challNames.length + 1).keys()))
         strWinMatrix[0][0] = "" // Fix corner
 
+        // Print the matchup matrix
         console.log("Winrate for challenger (column) vs opponent (row):")
         console.log(`E.g. top right cell is how often challenger #${challNames.length} beats opponent #1`)
         matprint(strWinMatrix, (val, i, j) => {
@@ -202,6 +195,7 @@ const scheduler = {
             return (Number.isNaN(n) || i == 0 || j == 0) ? val : getColor(n, minVal, maxVal)(val);
         });
 
+        // Print the overall rankings
         console.log("\n\nOverall winrates:\n")
         challNames.map((name, i) => {
             let l = winMatrix.map(row => row[i]).filter(n => typeof n === "number");
@@ -209,6 +203,7 @@ const scheduler = {
         }).sort((a, b) => b[1]- a[1])
         .forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
 
+        // Work is done, kill our worker pool
         pool.terminate();
     });
 });
