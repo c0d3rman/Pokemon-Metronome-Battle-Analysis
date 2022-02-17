@@ -1,4 +1,6 @@
+const fs = require('fs');
 const chalk = require('chalk');
+const {Teams, TeamValidator} = require('./pokemon-showdown');
 
 // Function to colorize numbers from red to green
 function getColor(n, min, max) {
@@ -35,7 +37,62 @@ function matprint(mat, stringifier) {
     });
 }
 
+
+// Function to load Showdown-format teams from a provided string (presumably loaded from a file)
+const validator = new TeamValidator('gen8metronomebattle');
+function loadTeams(str) {
+    str = str.trim() + "\n\n\n";
+
+    if (str.match(/(^=== \[gen8metronomebattle\] ([^\n]*?) ===\n(.+?)\n\n\n)*/gms)[0] != str) {
+        console.log("*** WARNING: a teams str seems to be invalid\n")
+    }
+
+    return [...str
+    .matchAll(/^=== \[gen8metronomebattle\] ([^\n]*?) ===\n(.+?)\n\n\n/gms)]
+    .reduce((dict, match) => {
+        const team = Teams.import(match[2]);
+        let name = match[1];
+        const m = name.match(/^(.+?)\/(.+?)$/);
+        if (m) {
+            name = m[2];
+        }
+
+        // Handle duplicate team names
+        fullName = name
+        i = 1
+        while (fullName in dict) {
+            i++
+            fullName = `${name} [${i}]`
+        }
+        if (i > 1) console.log(`Warning: duplicate team name ${name} (numbering)`)
+
+        dict[fullName] = Teams.pack(team)
+
+        // Warn if team is illegal
+        const issues = validator.validateTeam(team)
+        if (issues !== null) {
+            console.log(`Warning: team "${fullName}" is illegal for metronome battle:\n${issues}`)
+        }
+        return dict
+    }, {})
+}
+
+// Function to load a file
+// Handles windows newlines
+function loadFile(filename) {
+    try {
+        return fs.readFileSync(filename).toString().replace(/\r/g, "");
+    } catch {
+        console.log(`Could not load file '${filename}'`)
+        process.exit()
+    }
+}
+
+
+
 module.exports = {
     matprint: matprint,
-    getColor: getColor
+    getColor: getColor,
+    loadTeams: loadTeams,
+    loadFile: loadFile
 }
