@@ -20,6 +20,7 @@ const typeDict = {};
 const typePower = {};
 const physSpecDict = {'Physical': {num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0},
 						'Special': {num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0}}
+let zPower = 0;
 
 for (const move of moves) {
 	const m = Dex.moves.get(move);
@@ -82,6 +83,10 @@ for (const move of moves) {
 
 			physSpecDict[m.category].numPower++
 			physSpecDict[m.category].totalPower += power
+
+			if ("zMove" in m && "basePower" in m.zMove) {
+				zPower += m.zMove.basePower - power
+			}
 		}
 	}
 }
@@ -274,4 +279,8 @@ console.log(columnify(statData
 	.slice(0, numMons)
 	.map((r, i) => {r.place = '#'+(i+1); r.typeDef = defensiveTypeData[[...Dex.species.get(r.name).types].sort().join("/")].total; return r})
 , {minWidth: 5, columns: ['place', 'name', 'type', 'hp', 'atk', 'def', 'spa', 'spd', 'spe', 'totalCustom', 'typeDef']}));
+console.log()
+
+console.log(`Using a Z-crystal on a move increases its power on average by ${(zPower / moves.length).toFixed(1)}
+(This accounts for the many status moves that get no boost whatsoever)`)
 console.log()
