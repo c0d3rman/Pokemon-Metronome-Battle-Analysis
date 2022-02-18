@@ -2,7 +2,8 @@ const workerpool = require('workerpool');
 const {BattleStream} = require('./pokemon-showdown');
 
 async function simBattle(team1, team2) {
-    const moves = {};
+    const movesP1 = {};
+    const movesP2 = {};
     const stream = new BattleStream();
 
     stream.write(`>start {"formatid":"gen8metronomebattle"}`);
@@ -21,16 +22,17 @@ async function simBattle(team1, team2) {
             }
         }
 
-        for (const match of output.matchAll(/\|move\|.+?\|(.+?)\|/g)) {
-            if (!(match[1] in moves)) {
-                moves[match[1]] = 0;
+        for (const match of output.matchAll(/\|move\|p([12])[ab]: .+?\|(.+?)\|/g)) {
+            const moves = match[1] == "1" ? movesP1 : movesP2;
+            if (!(match[2] in moves)) {
+                moves[match[2]] = 0;
             }
-            moves[match[1]]++;
+            moves[match[2]]++;
         }
 
         const m = output.match(/\|win\|(P[12])/);
         if (m) {
-            return moves;
+            return [movesP1, movesP2, m[1]];
         }
 
         if (/\|turn\|\d+$/.test(output)) {

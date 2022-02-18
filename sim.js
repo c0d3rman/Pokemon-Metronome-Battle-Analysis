@@ -1,28 +1,15 @@
-const {matprint, getColor, loadTeams, loadFile, Scheduler} = require('./util')
+const {matprint, getColor, loadTeams, loadFile, Scheduler, parseArgs} = require('./util')
 const cliProgress = require('cli-progress');
 const workerpool = require('workerpool');
 
 
 // Parse command line args
-if (process.argv.length - 2 < 2 || process.argv.length - 2 > 3) {
-    console.log(
-`Example usage:
-Round robin mode:\tnode sim.js meta_teams.txt 100
-Challenger mode:\tnode sim.js meta_teams.txt sample_teams.txt 10
-`);
-    process.exit();
-}
-const isChallengerMode = (process.argv.length - 2 == 3);
-let trials = isChallengerMode ? process.argv[4] : process.argv[3];
-if (trials.match(/\D/) || parseInt(trials) <= 0) {
-    console.log("Invalid number of trials");
-    process.exit();
-}
-trials = parseInt(trials)
+const [oppFile, challFile, trials] = parseArgs("node sim.js opponent_teams.txt [challenger_teams.txt] 1000")
+const isChallengerMode = (typeof challFile !== 'undefined');
 
 // Load all teams
-const oppTeams = loadTeams(loadFile(process.argv[2]))
-const challTeams = (isChallengerMode ? loadTeams(loadFile(process.argv[3])) : oppTeams)
+const oppTeams = loadTeams(oppFile)
+const challTeams = (isChallengerMode ? loadTeams(challFile) : oppTeams)
 
 // Ensure a consistent ordering of keys by just saving them
 const oppNames = Object.keys(oppTeams);

@@ -6,6 +6,7 @@ const {Dex} = require('./pokemon-showdown');
 const fs = require('fs');
 const columnify = require('columnify');
 const chalk = require('chalk');
+const {colorize} = require('./util')
 
 
 // All moves that can be drawn by metronome
@@ -13,36 +14,6 @@ const moves = fs.readFileSync("metronome_moves.txt").toString().replace(/\r/g, "
 // All pokemon that can be used
 const legalMons = Dex.species.all().filter(s => !s.types.includes('Steel') && s.bst <= 625 && s.name != "Pokestar Spirit")
 
-// Colors associated with the various types
-const typeColors = {
-	"Normal": "#A8A77A",
-	"Fire": "#EE8130",
-	"Water": "#6390F0",
-	"Electric": "#F7D02C",
-	"Grass": "#7AC74C",
-	"Ice": "#96D9D6",
-	"Fighting": "#C22E28",
-	"Poison": "#A33EA1",
-	"Ground": "#E2BF65",
-	"Flying": "#A98FF3",
-	"Psychic": "#F95587",
-	"Bug": "#A6B91A",
-	"Rock": "#B6A136",
-	"Ghost": "#735797",
-	"Dragon": "#6F35FC",
-	"Dark": "#705746",
-	"Steel": "#B7B7CE",
-	"Fairy": "#D685AD",
-	"Bird": "#7A9F90",
-	"Physical": "#BA3423",
-	"Special": "#51586E"
-};
-function colorize(s, type) {
-	if (typeof type != 'string') {
-		type = s in typeColors ? s : Dex.moves.get(s).type
-	}
-	return chalk.hex(typeColors[type])(s)
-}
 
 
 const typeDict = {};

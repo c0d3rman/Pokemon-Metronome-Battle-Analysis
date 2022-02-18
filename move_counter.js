@@ -1,27 +1,14 @@
 const { Dex, Teams } = require("./pokemon-showdown");
-const {loadFile, Scheduler} = require('./util');
+const {loadFile, Scheduler, parseArgs, matprint, colorize, getColor} = require('./util');
 const cliProgress = require('cli-progress');
 const workerpool = require('workerpool');
 
 
 // Parse command line args
-if (process.argv.length - 2 != 2) {
-    console.log(
-        `Example usage:
-        node move_counter.js gen8metronomebattle-0.json 1000
-        `);
-    process.exit();
-}
-let trials = process.argv[3];
-if (trials.match(/\D/) || parseInt(trials) <= 0) {
-    console.log("Invalid number of trials");
-    process.exit();
-}
-trials = parseInt(trials)
+const [file, trials] = parseArgs("node move_counter.js gen8metronomebattle-0.json 1000")
 
-
-// Import data about meta to generate  teams
-const rawMetaObj = JSON.parse(loadFile(process.argv[2]));
+// Import data about meta to generate teams
+const rawMetaObj = JSON.parse(file);
 
 // Process raw meta file
 const metaObj = {data: new Map()}
@@ -147,12 +134,18 @@ const moveDict = {};
         
         await scheduler.isReady(); // Make sure we don't have too many promises in flight
 
-        scheduler.schedule(pool.exec('simBattle', [team1, team2]).then((moves) => {
-            for (const move in moves) {
-                if (!(move in moveDict)) {
-                    moveDict[move] = 0;
+        scheduler.schedule(pool.exec('simBattle', [team1, team2]).then((out) => {
+            let [movesP1, movesP2, winner] = out;
+            for (const moves of [movesP1, movesP2]) {
+                for (const move in moves) {
+                    if (!(move in moveDict)) {
+                        moveDict[move] = [0, 0];
+                    }
+                    moveDict[move][0] += moves[move]
+                    if ((winner == "P1" && moves == movesP1) || (winner == "P2" && moves == movesP2)) {
+                        moveDict[move][1] += moves[move]
+                    }
                 }
-                moveDict[move] += moves[move]
             }
             pbar.increment();
         }));
@@ -164,7 +157,18 @@ const moveDict = {};
     scheduler.isDone().then(() => {
         pbar.stop();
 
-        console.log(new Map([...Object.entries(moveDict)].sort((a, b) => b[1] - a[1])));
+        const sum = Object.entries(moveDict).filter(l => l[0] != "Metronome").reduce((sum, l) => sum + l[1][0], 0)
+
+        matprint([...Object.entries(moveDict)]
+            .filter(l => l[0] != "Metronome")
+            .map(l => [l[0], l[1][0] / sum, l[1][1] / l[1][0]])
+            .sort((a, b) => b[2] - a[2])
+            .map(l => [l[0], l[1].toFixed(5), l[2].toFixed(5)])
+        , (s, _, j) => {
+            if (j == 0) return colorize(s);
+            if (j == 2) return getColor(Number(s), 0, 1)(s);
+            return s
+        }, true);
 
         // Work is done, kill our worker pool
         pool.terminate();

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const chalk = require('chalk');
-const {Teams, TeamValidator} = require('./pokemon-showdown');
+const {Teams, TeamValidator, Dex} = require('./pokemon-showdown');
 
 // Function to colorize numbers from red to green
 function getColor(n, min, max) {
@@ -22,7 +22,7 @@ function getColor(n, min, max) {
 
 // Function for pretty-printing matrices
 // Modified from https://gist.github.com/lbn/3d6963731261f76330af
-function matprint(mat, stringifier) {
+function matprint(mat, stringifier, leftAlign=false) {
     let shape = [mat.length, mat[0].length];
     function col(mat, i) {
         return mat.map(row => row[i]);
@@ -33,7 +33,11 @@ function matprint(mat, stringifier) {
     }
 
     mat.forEach((row, i) => {
-        console.log.apply(null,row.map((val, j) => new Array(colMaxes[j]-val.toString().length+1).join(" ") + (stringifier ? stringifier(val.toString(), i, j) : val.toString()) + "  "));
+        if (leftAlign) {
+            console.log.apply(null,row.map((val, j) => "  " + (stringifier ? stringifier(val.toString(), i, j) : val.toString()) + new Array(colMaxes[j]-val.toString().length+1).join(" ") ));
+        } else {
+            console.log.apply(null,row.map((val, j) => new Array(colMaxes[j]-val.toString().length+1).join(" ") + (stringifier ? stringifier(val.toString(), i, j) : val.toString()) + "  "));
+        }
     });
 }
 
@@ -139,6 +143,81 @@ class Scheduler {
     }
 };
 
+// For some reason all the command line arg parsers I could find on NPM were way overcomplicated, so here's a simplified one
+function parseArgs(usageStr) {
+    const expectedArgs = usageStr.split(" ").slice(2)
+
+    e = function() {
+        console.log(`Usage:\n${usageStr}`)
+        process.exit()
+    }
+
+    if (process.argv.length < 2 || process.argv.length > expectedArgs.length + 2) {
+        e()
+    }
+
+    return process.argv.slice(2).reduce((l, arg) => {
+        while (expectedArgs.length > 0) {
+            let expectedArg = expectedArgs.shift();
+            const optional = expectedArg.match(/^\[(.+?)\]$/)
+            if (optional) {
+                expectedArg = optional[1]
+            }
+
+            if (Number.isInteger(Number(expectedArg))) {
+                const n = Number(arg)
+                if (Number.isInteger(n) && n > 0) {
+                    l.push(n)
+                    return l
+                }
+            } else if (expectedArg.includes(".") && arg.includes(".")) {
+                l.push(loadFile(arg))
+                return l
+            } else if (optional) {
+                l.push(undefined)
+                continue
+            }
+            break
+        }
+
+        e()
+    }, [])
+}
+
+
+// Colors associated with the various types
+const typeColors = {
+    "Normal": "#A8A77A",
+    "Fire": "#EE8130",
+    "Water": "#6390F0",
+    "Electric": "#F7D02C",
+    "Grass": "#7AC74C",
+    "Ice": "#96D9D6",
+    "Fighting": "#C22E28",
+    "Poison": "#A33EA1",
+    "Ground": "#E2BF65",
+    "Flying": "#A98FF3",
+    "Psychic": "#F95587",
+    "Bug": "#A6B91A",
+    "Rock": "#B6A136",
+    "Ghost": "#735797",
+    "Dragon": "#6F35FC",
+    "Dark": "#705746",
+    "Steel": "#B7B7CE",
+    "Fairy": "#D685AD",
+    "Bird": "#7A9F90",
+    "Physical": "#BA3423",
+    "Special": "#51586E"
+};
+function colorize(s, type) {
+    if (typeof type != 'string') {
+        type = s in typeColors ? s : Dex.moves.get(s).type
+    }
+    return chalk.hex(typeColors[type])(s)
+}
+
+
+
 
 
 
@@ -148,5 +227,7 @@ module.exports = {
     getColor: getColor,
     loadTeams: loadTeams,
     loadFile: loadFile,
-    Scheduler: Scheduler
+    Scheduler: Scheduler,
+    parseArgs: parseArgs,
+    colorize: colorize
 }
