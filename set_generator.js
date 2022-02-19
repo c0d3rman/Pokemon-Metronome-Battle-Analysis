@@ -68,7 +68,6 @@ let abilities = [
   'Aerilate', // normal moves are now flying type and 1.2x power
   'As One(Glastrier)', // opponent cannot use berries, +1 Atk on KO
   'As One(Spectrier)', // opponent cannot use berries, +1 SpA on KO
-  'Analytic', // x1.3 power when moving last
   'Dauntless Shield', // +1 Def on switch-in
   'Delta Stream', // overrides all weather, flying type weaknesses are ignored
   'Desolate Land', // permanent sun, water attacks fail
@@ -78,19 +77,15 @@ let abilities = [
   'Ice Scales', // 2x SpD
   'Imposter', // transform into opposing pokemon on switch-in
   'Lightning Rod', // immune to electric, +1 SpA when an electric attack is used
-  'Mirror Armor', // stat drops are reflected onto the user
   'Misty Surge', // misty terrain on switch-in
-  'Mummy', // pokemon who make contact heve their ability replaced with this one
   'Pixilate', // normal moves are now fairy type and 1.2x power 
   'Plus', // if ally is Plus, 1.5x SpA
   'Primordial Sea', // permanent rain, fire type attacks fail
   'Refrigerate', // normal moves are now ice type and 1.2x power
   'Serene Grace', // secondary effects are twice as likely
-  'Sheer Force', // if a move has a secondary effect, 1.3x power and ignore the effect.
   'Simple', // stat changes are doubled
   'Storm Drain', // immune to water, +1 SpA when a water attack is used
   'Thick Fat', // resist fire and ice
-  'Trace', // copies opposing pokemons ability
   
   //
   //B-Tier and lower
@@ -99,15 +94,12 @@ let abilities = [
   'Bulletproof', // immune to all ballistic moves
   'Compound Eyes', // 1.3x Acc
   'Cute Charm', // if opposite gender, 30% chance of causing infatuation when hit by a contact move
-  'Contrary', // stat changes are reversed
-  'Dancer', // copies all dance moves
   'Effect Spore', // 30% chance of random status when hit by a contact move
   'Electric Surge', // electric terrain on switch-in
   'Flame Body', // 30% chance of burn when hit by a contact move
   'Full Metal Body', // immune to stat drops by other pokemon
   'Galvanize', // normal moves are now electric type and 1.2x power
   'Harvest', // 50% chance to restore a used berry, 100% in sun
-  'Healer', // 30% to cure allys status
   'Infiltrator', // ignores mist, safeguard, sub and screens
   'Intimidate', // -1 Opponents Atk on switch-in
   'Levitate', // immune to ground moves
@@ -117,7 +109,7 @@ let abilities = [
   'No Guard', // moves cannot miss, enemies cannot miss you
   'Normalize', // all moves are normal type, 1.2x power if type was changed
   'Overcoat', // immune to weather damage and powder moves
-  'Pastel Veil', // immune to poison
+  'Pickpocket', // if no item, steal opponents when they make contact
   'Pickup', // if no item, picks up one used by ally
   'Poison Point', // 30% chance of poisoning enemy when hit by a contact move
   'Poison Touch', // 30% chance of poisoning enemy on contact
@@ -125,7 +117,6 @@ let abilities = [
   'Punk Rock', // recieve 0.5x Dmg from sound moves, deal 1.3x Dmg with sound moves
   'Sap Sipper', // immune to grass, +1 Atk when hit by a grass attack
   'Scrappy', // can hit ghosts with normal and fighting type attacks
-  'Shadow Shield', // take 0.5x Dmg at full health
   'Shed Skin', // 33% chance of curing status every turn
   'Shield Dust', // immune to secondary effects
   'Sniper', // crits do 1.5x usual Dmg
@@ -135,13 +126,7 @@ let abilities = [
   'Stench', // 10% flinch chance
   'Super Luck', // +1 crit chance
   'Synchronize', // when statused, opponent is too
-  'Truant', //one way to win the PP war, I suppose
   'Wonder Skin' // status moves have 50% accuracy against you
-  
-  //'Hydration', // TODO: only if teammate has Primordial Sea
-  //'Illusion', // TODO: Slot 1 only
-  //'Innards Out', // TODO: the shit chansey set only
-  //'Liquid Voice', // TODO: only if teammate has storm drain, yes this works for perish song btw
 ]
 
 let natures = [
@@ -231,9 +216,7 @@ function validateSet(set) {
 	//
 	
 	// grass types should not use abilities that are a worse flower veil
-	|| (mon.types.includes("Grass") && (set.ability == "Healer" || set.ability == "Overcoat" || set.ability == "Shed Skin" || set.ability == "Shield Dust" || set.ability == "Pastel Veil"))
-	// poison types should not use Pastel Veil
-	|| (mon.types.includes("Poison") && set.ability == "Pastel Veil")
+	|| (mon.types.includes("Grass") && (set.ability == "Overcoat" || set.ability == "Shed Skin" || set.ability == "Shield Dust"))
 	
 	//
 	// Special Item Clauses
@@ -269,20 +252,20 @@ function validateSet(set) {
 	// Harvest should only be run with a berry
 	|| (set.ability == "Harvest" && item.isBerry != true)
 	// Magician should only be run with WP, no item or a berry
-	|| (set.ability == "Magician" && set.item != "Weakness Policy" && item.isBerry != true && set.item != "No Item")
+	|| ((set.ability == "Magician" || set.ability == "Pickpocket") && set.item != "Weakness Policy" && item.isBerry != true && set.item != "No Item")
 	// Pickup should only be run with WP or a berry
 	|| (set.ability == "Pickup" && set.item != "Weakness Policy" && item.isBerry != true)
-	// No Item should only be run with Magician or Pickup
-	|| (set.item == "No Item" && set.ability != "Magician")
+	// No Item should only be run with Magician and Pickpocket
+	|| (set.item == "No Item" && set.ability != "Magician" && set.ability != "Pickpocket")
 	
 	//
 	// Abilities Dependent On Stats
 	//
 	
-    // Analytic should be run with min speed
-    || (set.ability == "Analytic" && set.speed != "min")
 	// Choice Specs, As One(Spectrier), Competitive, Download, Plus and Soul Heart should not be run if Atk > SpA
     || ((set.item == "Choice Specs" || set.ability == "Competitive" || set.ability == "As One(Spectrier)" || set.ability == "Download" || set.ability == "Plus" || set.ability == "Soul Heart") && mon.baseStats.atk > 1.25 * mon.baseStats.spa)
+	// Choice Band, As One(Glastrier), Defiant and Intrepid Sword should not be run if SpA >>> Atk
+	|| ((set.item == "Choice Band" || set.ability == "As One(Glastrier)" || set.ability == "Defiant" || set.ability == "Intrepid Sword") && mon.baseStats.spa >= 1.5 * mon.baseStats.atk)
 	
 	//
 	// Nature Don't Make Sense
