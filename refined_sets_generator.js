@@ -1,8 +1,18 @@
 const {Teams} = require("./pokemon-showdown");
 const fs = require('fs')
 
+let outfile, infile;
+if (process.argv.length == 3) {
+  outfile = process.argv[2]
+  infile = 0
+} else {
+  outfile = process.argv[3]
+  infile = process.argv[2]
+}
+
+
 let sets = []
-fs.readFileSync(0).toString().split("\n").forEach((line) => {
+fs.readFileSync(infile).toString().split("\n").forEach((line) => {
     let match = line.match(/^\s*#\d+\s*\|\s*[\d.]+\s*\|\s*(.+?), (.+?), (.+?), (.+?), (.+?)$/)
     if (match != null) {
         sets.push({
@@ -18,7 +28,7 @@ fs.readFileSync(0).toString().split("\n").forEach((line) => {
 })
 
 console.log(`Decoded ${sets.length} sets`);
-fs.writeFile(process.argv[2], sets.map(set => {
+fs.writeFile(outfile, sets.map(set => {
   return "=== [gen8metronomebattle] " + 
   `${set.species}, ${set.ability}, ${set.item}, ${set.nature}, ${(set.ivs.spe == 0 ? "min" : "neut")}-speed ===\n\n` +
   Teams.export([set, set]) + "\n\n"
