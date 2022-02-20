@@ -1,5 +1,6 @@
 const {Teams} = require("./pokemon-showdown");
 const fs = require('fs')
+const {loadFile} = require("./util/input")
 
 let outfile, infile;
 if (process.argv.length == 3) {
@@ -12,7 +13,7 @@ if (process.argv.length == 3) {
 
 
 let sets = []
-fs.readFileSync(infile).toString().split("\n").forEach((line) => {
+loadFile(infile).split("\n").forEach((line) => {
     let match = line.match(/^\s*#\d+\s*\|\s*[\d.]+\s*\|\s*(.+?), (.+?), (.+?), (.+?), (.+?)$/)
     if (match != null) {
         sets.push({
