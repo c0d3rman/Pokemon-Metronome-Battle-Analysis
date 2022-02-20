@@ -6,7 +6,7 @@ const {Dex} = require('./pokemon-showdown');
 const fs = require('fs');
 const columnify = require('columnify');
 const chalk = require('chalk');
-const {colorize} = require('./util')
+const {colorize} = require('./util/output')
 
 
 // All moves that can be drawn by metronome

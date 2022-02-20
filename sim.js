@@ -1,4 +1,6 @@
-const {matprint, getColor, loadTeams, loadFile, Scheduler, parseArgs} = require('./util')
+const {loadTeams, loadFile, parseArgs} = require('./util/input')
+const {matprint, colorizeN} = require('./util/output')
+const {Scheduler} = require('./util/misc')
 const cliProgress = require('cli-progress');
 const workerpool = require('workerpool');
 
@@ -95,7 +97,7 @@ const scheduler = new Scheduler(); // Scheduler to make sure we don't have too m
         console.log(`E.g. top right cell is how often challenger #${challNames.length} beats opponent #1`)
         matprint(strWinMatrix, (val, i, j) => {
             let n = parseFloat(val);
-            return (Number.isNaN(n) || i == 0 || j == 0) ? val : getColor(n, minVal, maxVal)(val);
+            return (Number.isNaN(n) || i == 0 || j == 0) ? val : colorizeN(n, minVal, maxVal)(val);
         });
 
         // Print the overall rankings
@@ -104,7 +106,7 @@ const scheduler = new Scheduler(); // Scheduler to make sure we don't have too m
             let l = winMatrix.map(row => row[i]).filter(n => typeof n === "number");
             return [name, l.reduce((sum, n) => sum + n, 0) / l.length];
         }).sort((a, b) => b[1]- a[1])
-        .forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + getColor(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
+        .forEach((pair, i) => console.log("   #" + (i+1) + "\t| " + colorizeN(pair[1], minVal, maxVal)(pair[1].toFixed(1)) + " | " + pair[0]))
 
         // Work is done, kill our worker pool
         pool.terminate();

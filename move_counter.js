@@ -1,5 +1,7 @@
+const {loadFile, parseArgs} = require('./util/input');
+const {matprint, colorize, colorizeN} = require('./util/output');
+const {Scheduler} = require('./util/misc');
 const { Dex, Teams } = require("./pokemon-showdown");
-const {loadFile, Scheduler, parseArgs, matprint, colorize, getColor} = require('./util');
 const cliProgress = require('cli-progress');
 const workerpool = require('workerpool');
 
@@ -166,7 +168,7 @@ const moveDict = {};
             .map(l => [l[0], l[1].toFixed(5), l[2].toFixed(5)])
         , (s, _, j) => {
             if (j == 0) return colorize(s);
-            if (j == 2) return getColor(Number(s), 0, 1)(s);
+            if (j == 2) return colorizeN(Number(s), 0, 1)(s);
             return s
         }, true);
 
