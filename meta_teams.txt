@@ -1,88 +1,203 @@
-=== [gen8metronomebattle] Metronome Tournament/Double HO Hera ===
+=== [gen8metronomebattle] Physical HO 1 - Mega Heracross ===
 
 Heracross-Mega @ Choice Band  
 Ability: Intrepid Sword  
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
-Brave Nature  
+Adamant Nature  
 - Metronome  
 
 Heracross-Mega @ Choice Band  
 Ability: Intrepid Sword  
-Shiny: Yes  
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
-Brave Nature  
+Adamant Nature  
 - Metronome  
 
 
-=== [gen8metronomebattle] The Lords ===
+=== [gen8metronomebattle] Physical HO 2 - Ursaluna ===
+
+Ursaluna @ Weakness Policy  
+Ability: Defiant  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Brave Nature  
+- Metronome 
+
+Ursaluna @ Weakness Policy  
+Ability: Defiant  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Brave Nature  
+- Metronome
+
+
+=== [gen8metronomebattle] Physical HO 3 - Mega Banette ===
+
+Banette-Mega @ Choice Band
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Brave Nature  
+- Metronome 
+
+Banette-Mega @ Choice Band
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Brave Nature  
+- Metronome 
+
+
+=== [gen8metronomebattle] Special HO 1 - Mega Ampharos ===
+
+Ampharos-Mega @ Weakness Policy
+Ability: Download  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Quiet Nature  
+- Metronome
+
+Ampharos-Mega @ Weakness Policy
+Ability: Download  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Quiet Nature  
+- Metronome
+
+
+=== [gen8metronomebattle] Special HO 2 - Mega Camerupt + Mega Gardevoir ===
+
+Camerupt-Mega @ Choice Specs
+Ability: Desolate Land  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Quiet Nature  
+- Metronome
+
+Gardevoir-Mega @ Choice Specs
+Ability: Pixilate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Quiet Nature  
+- Metronome
+
+
+=== [gen8metronomebattle] Special HO 3 - Mega Gengar ===
+
+Gengar-Mega @ Choice Specs
+Ability: Download  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Quiet Nature  
+- Metronome
+
+Gengar-Mega @ Choice Specs
+Ability: Download  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Quiet Nature  
+- Metronome
+
+
+=== [gen8metronomebattle] Fluffy 1 - Guzzlord ===
 
 Guzzlord @ Weakness Policy  
-Ability: Fur Coat
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
-IVs: 0 Spe
-Brave Nature   
-- Metronome 
-
-Guzzlord @ Weakness Policy
-Ability: Fur Coat
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
-IVs: 0 Spe
-Brave Nature   
-- Metronome
-
-
-=== [gen8metronomebattle] Hisui - Best I've Seen ===
-
-Ursaluna @ Weakness Policy
-Ability: Defiant 
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
-IVs: 0 Spe
-Brave Nature  
-- Metronome
-
-Basculegion @ Choice Band
-Ability: Intrepid Sword
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
-Brave Nature   
-- Metronome
-
-
-=== [gen8metronomebattle] Metronome Tournament/Mixed HO ===
-
-Heracross-Mega @ Choice Band  
-Ability: Intrepid Sword  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
-Brave Nature  
-- Metronome  
-
-Ampharos-Mega @ Choice Specs  
-Ability: Competitive  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD 
-IVs: 0 Spe
-Quiet Nature  
-- Metronome   
-
-
-=== [gen8metronomebattle] Metronome Tournament/Special HO ===
-
-Ampharos-Mega @ Choice Specs  
-Ability: Plus  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
-IVs: 0 Spe
-Quiet Nature  
-- Metronome  
-
-Ampharos-Mega @ Choice Specs  
-Ability: Minus  
+Ability: Fluffy
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-IVs: 0 Spe
-Quiet Nature  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Guzzlord @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+=== [gen8metronomebattle] Fluffy 2 - Tyranilord ===
+
+Tyranitar @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Guzzlord @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome
+
+
+=== [gen8metronomebattle] Fluffy 3 - Mega Slowbro ===
+
+Slowbro-Mega @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Slowbro-Mega @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+=== [gen8metronomebattle] Ice Scales 1 - Mega Slowbro ===
+
+Slowbro-Mega @ Weakness Policy  
+Ability: Ice Scales
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Slowbro-Mega @ Weakness Policy  
+Ability: Ice Scales
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
 - Metronome 
 
 
-=== [gen8metronomebattle] Metronome Tournament/Balanced Flower Veil ===
+=== [gen8metronomebattle] Ice Scales 2 - Guzzlord ===
 
-Venusaur-Mega @ Choice Specs  
+Guzzlord @ Weakness Policy  
+Ability: Ice Scales
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Guzzlord @ Weakness Policy  
+Ability: Ice Scales
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome
+
+
+=== [gen8metronomebattle] Flower Veil 1 - Venusaur ===
+
+Venusaur-Mega @ Weakness Policy  
+Ability: Flower Veil  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Quiet Nature  
+- Metronome  
+
+Venusaur-Mega @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Quiet Nature  
+- Metronome  
+
+
+=== [gen8metronomebattle] Flower Veil 2 - Venusaur + Necturna ===
+
+Venusaur-Mega @ Weakness Policy  
 Ability: Flower Veil  
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
 Quiet Nature  
@@ -90,114 +205,94 @@ Quiet Nature
 
 Necturna @ Weakness Policy  
 Ability: Thick Fat  
-Shiny: Yes  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
 Brave Nature  
-IVs: 0 Spe  
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Ghost Flower Veil ===
+=== [gen8metronomebattle] Flower Veil 3 - Necturna ===
 
 Necturna @ Weakness Policy  
-Ability: Flower Veil   
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-Brave Nature  
+Ability: Flower Veil  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
 IVs: 0 Spe  
-- Metronome   
+Brave Nature  
+- Metronome  
 
 Necturna @ Weakness Policy  
 Ability: Thick Fat  
-Shiny: Yes  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-Brave Nature  
-IVs: 0 Spe  
-- Metronome  
-
-
-=== [gen8metronomebattle] Metronome Tournament/Ghost HO ===
-
-Gengar-Mega @ Choice Specs 
-Ability: Download 
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
-Quiet Nature  
-- Metronome   
-
-Banette-Mega @ Weakness Policy  
-Ability: Intrepid Sword  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-Brave Nature  
-IVs: 0 Spe  
-- Metronome  
-
-
-=== [gen8metronomebattle] Metronome Tournament/Ghost Offence ===
-
-Dragapult @ Weakness Policy 
-Ability: Magic Bounce
-Shiny: Yes  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
-Brave Nature  
-- Metronome   
-
-Banette-Mega @ Weakness Policy  
-Ability: Intrepid Sword  
-Shiny: Yes  
-Hidden Power: Ghost  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-Brave Nature  
-IVs: 0 Spe  
-- Metronome  
-
-
-=== [gen8metronomebattle] Metronome Tournament/Megasab Stall ===
-
-Sableye-Mega @ Brightpowder 
-Ability: Magic Bounce
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
-IVs: 0 Spe
-Brave Nature  
-- Metronome   
-
-Sableye-Mega @ Brightpowder 
-Ability: Magic Bounce
 EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
 IVs: 0 Spe
 Brave Nature  
 - Metronome  
 
 
-=== [gen8metronomebattle] Metronome Tournament/Bonk's Stall ===
+=== [gen8metronomebattle] Stall 1 - Null ===
 
-Type: Null @ Eviolite  
-Ability: Friend Guard  
-Shiny: Yes  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-Relaxed Nature  
-IVs: 0 Spe  
-- Metronome  
-
-Dusclops @ Eviolite  
-Ability: Friend Guard  
-Shiny: Yes  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
-Relaxed Nature  
-IVs: 0 Spe  
-- Metronome  
-
-
-=== [gen8metronomebattle] Metronome Tournament/Imposter Blissey ===
-
-Blissey @ Leppa Berry  
-Ability: Imposter  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
-Naughty Nature  
-- Metronome  
-
-Blissey @ Leppa Berry  
-Ability: Imposter  
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
-Naughty Nature  
+Type: Null @ Eviolite
+Ability: Magic Bounce
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
 - Metronome
+
+Type: Null @ Eviolite
+Ability: Magic Bounce
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+
+=== [gen8metronomebattle] Stall 2 - Dusclops ===
+
+Dusclops @ Eviolite
+Ability: Magic Bounce
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+Dusclops @ Eviolite
+Ability: Magic Bounce
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+
+=== [gen8metronomebattle] Stall 3 - Mega Sableye ===
+
+Sableye-Mega @ Bright Powder
+Ability: Magic Bounce
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+Sableye-Mega @ Bright Powder
+Ability: Magic Bounce
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+
+=== [gen8metronomebattle] Imposter - Blissey ===
+
+Blissey @ Leppa Berry  
+Ability: Imposter  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Relaxed Nature  
+- Metronome  
+
+Blissey @ Leppa Berry  
+Ability: Imposter  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+IVs: 0 Spe
+Relaxed Nature  
+- Metronome  
 
 
