@@ -1,17 +1,25 @@
-const {loadTeams, loadFile, parseArgs} = require('./util/input')
+const {loadTeams, loadFile} = require('./util/input')
 const {matprint, colorizeN} = require('./util/output')
 const {Scheduler} = require('./util/misc')
 const cliProgress = require('cli-progress');
 const workerpool = require('workerpool');
+const commandLineArgs = require('command-line-args')
 
+// Handle command line options
+const options = commandLineArgs([
+  { name: 'challenger', alias: 'c', type: String, defaultOption: true },
+  { name: 'opponent', alias: 'o', type: String, defaultValue: 'meta_teams.txt' },
+  { name: 'trials', alias: 'n', type: Number },
+  { name: 'worker', alias: 'w', type: String, defaultValue: 'workers/basic.js' },
+  { name: 'agents', alias: 'a', type: String, multiple: true, defaultValue: 'agents/doNothing.js' },
+  ])
 
-// Parse command line args
-const [oppFile, challFile, trials] = parseArgs("node sim.js opponent_teams.txt [challenger_teams.txt] 1000")
-const isChallengerMode = (typeof challFile !== 'undefined');
-
-// Load all teams
-const oppTeams = loadTeams(oppFile)
-const challTeams = (isChallengerMode ? loadTeams(challFile) : oppTeams)
+const trials = options.trials;
+const isChallengerMode = (typeof options.challenger !== 'undefined');
+const oppTeams = loadTeams(loadFile(options.opponent))
+const challTeams = (isChallengerMode ? loadTeams(loadFile(options.challenger)) : oppTeams)
+const worker = options.worker;
+const agents = (options.agents.length == 1 ? [options.agents, options.agents] : options.agents);
 
 // Ensure a consistent ordering of keys by just saving them
 const oppNames = Object.keys(oppTeams);
@@ -24,14 +32,12 @@ if (isChallengerMode) {
 Challengers:
 ${challNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}
 Opponents:
-${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`
-    );
+${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`);
 } else {
     console.log(
 `Round robin of ${oppNames.length} teams with each pair facing off ${trials} times
 Teams:
-${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`
-    );
+${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`);
 }
 
 // Preliminary setup
@@ -41,7 +47,7 @@ pbar.start(totalTrials, 0);
 
 let winMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.length).fill(0));
 
-const pool = workerpool.pool(__dirname + '/simWorker.js'); // Worker pool for multithreading
+const pool = workerpool.pool(__dirname + '/' + worker, {workerType: "process", forkArgs: agents}); // Worker pool for multithreading
 const scheduler = new Scheduler(); // Scheduler to make sure we don't have too many promises "in flight" at once, to avoid memory issues
 
 // The simulation dispatcher (see simWorker.js for the actual battle code)
@@ -63,7 +69,7 @@ const scheduler = new Scheduler(); // Scheduler to make sure we don't have too m
                     pbar.increment();
                 }).catch(function (err) {
                   console.log(err);
-                }));
+              }));
             }
         }
     }

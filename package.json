@@ -3,6 +3,7 @@
     "chalk": "4",
     "cli-progress": "^3.10.0",
     "columnify": "^1.6.0",
+    "command-line-args": "^5.2.1",
     "workerpool": "^6.2.0"
   }
 }

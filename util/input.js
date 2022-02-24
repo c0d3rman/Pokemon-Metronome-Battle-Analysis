@@ -212,49 +212,8 @@ function loadFile(filename) {
     }
 }
 
-// For some reason all the command line arg parsers I could find on NPM were way overcomplicated, so here's a simplified one
-function parseArgs(usageStr) {
-    const expectedArgs = usageStr.split(" ").slice(2)
-
-    e = function() {
-        console.log(`Usage:\n${usageStr}`)
-        process.exit()
-    }
-
-    if (process.argv.length < 2 || process.argv.length > expectedArgs.length + 2) {
-        e()
-    }
-
-    return process.argv.slice(2).reduce((l, arg) => {
-        while (expectedArgs.length > 0) {
-            let expectedArg = expectedArgs.shift();
-            const optional = expectedArg.match(/^\[(.+?)\]$/)
-            if (optional) {
-                expectedArg = optional[1]
-            }
-
-            if (Number.isInteger(Number(expectedArg))) {
-                const n = Number(arg)
-                if (Number.isInteger(n) && n > 0) {
-                    l.push(n)
-                    return l
-                }
-            } else if (expectedArg.includes(".") && arg.includes(".")) {
-                l.push(loadFile(arg))
-                return l
-            } else if (optional) {
-                l.push(undefined)
-                continue
-            }
-            break
-        }
-
-        e()
-    }, [])
-}
 
 module.exports = {
     loadTeams: loadTeams,
     loadFile: loadFile,
-    parseArgs: parseArgs,
 }
