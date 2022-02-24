@@ -4,7 +4,7 @@ const {Dex} = require('../pokemon-showdown');
 // Function to colorize numbers from red to green
 // Returns a function that you can use to color text
 function colorizeN(n, min, max) {
-    if (n < min || n > max) {
+    if (n < min - Number.EPSILON || n > max + Number.EPSILON) {
         return chalk.yellow;
     }
     if (min == max) {
