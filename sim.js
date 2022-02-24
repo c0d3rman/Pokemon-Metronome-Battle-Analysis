@@ -35,7 +35,7 @@ ${oppNames.map((x, i) => `  ${i+1}\t${x}`).join("\n")}`
 }
 
 // Preliminary setup
-const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}'});
+const pbar = new cliProgress.SingleBar({format: '[{bar}] {percentage}% | Time: {duration_formatted} | ETA: {eta_formatted} | {value}/{total}', etaBuffer: 100});
 const totalTrials = trials * oppNames.length * (isChallengerMode ? challNames.length : (challNames.length - 1) / 2);
 pbar.start(totalTrials, 0);
 
