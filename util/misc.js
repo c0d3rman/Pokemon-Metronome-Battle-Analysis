@@ -1,3 +1,5 @@
+const {Dex} = require('../pokemon-showdown');
+
 // This scheduler makes sure we don't fire off more than 10,000 promises at a time to avoid memory issues
 // If too many promises are "in flight", the loop that fires them will simply wait
 // It's very fragile and not resilient to multiple consumers calling isReady and isDone so be careful
@@ -49,6 +51,23 @@ class Scheduler {
     }
 };
 
+function typeEffectiveness(attackingType, defendingTypes) {
+    let damageMult = 1;
+    for (const t of defendingTypes) {
+        const cat = Dex.types.get(t).damageTaken[attackingType];
+        if (cat == 1) {
+            damageMult *= 2;
+        } else if (cat == 2) {
+            damageMult /= 2;
+        } else if (cat == 3) {
+            damageMult *= 0;
+        }
+    }
+    return damageMult
+}
+
+
 module.exports = {
-    Scheduler: Scheduler
+    Scheduler: Scheduler,
+    typeEffectiveness: typeEffectiveness
 }
