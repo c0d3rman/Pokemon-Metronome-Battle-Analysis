@@ -35,14 +35,7 @@ let items = [
   'Leppa Berry', // +5 PP
   'Bright Powder', // Opponents 0.9x Acc
   'Lum Berry', // Cure any status
-  'Razor Claw', // +1 Crit Chance
-  'Safety Goggles', // Immune to weather damage and powder moves
   'Life Orb', // x1.3 Dmg, -10% HP per attack
-  'Wide Lens', // 1.3x Acc
-  'Rowap Berry', // -1/8 enemy HP when hit physically
-  'Jaboca Berry', // -1/8 enemy HP when hit specially
-  'Kings Rock', // 10% flinch chance
-  'No Item'
 ]
 
 let abilities = [
@@ -58,7 +51,6 @@ let abilities = [
   'Magic Guard', // immune to indirect Dmg
   'Mold Breaker', // moves ignore abilities
   'Prism Armor', // take 0.75x Dmg from SE attacks, ignores Mold Breaker
-  'Tinted Lens', // NVE attacks do 2x Dmg
   'Unaware', // ignore opponents stat changes during attacks
   'Water Bubble', // water attacks do 2x Dmg, you resist fire and are immune to burn
   
@@ -71,63 +63,38 @@ let abilities = [
   'Dauntless Shield', // +1 Def on switch-in
   'Delta Stream', // overrides all weather, flying type weaknesses are ignored
   'Desolate Land', // permanent sun, water attacks fail
-  'Download', // +1 Atk or SpA, depending on opponents defensive stats
   'Flash Fire', // immunity to fire, fire moves 1.5x power when hit by a fire move
   'Fluffy', // 2x Def, weak to fire
   'Friend Guard', // Ally takes 0.75x Dmg
   'Ice Scales', // 2x SpD
   'Imposter', // transform into opposing pokemon on switch-in
   'Lightning Rod', // immune to electric, +1 SpA when an electric attack is used
-  'Misty Surge', // misty terrain on switch-in
   'Pixilate', // normal moves are now fairy type and 1.2x power 
   'Plus', // if ally is Plus, 1.5x SpA
   'Primordial Sea', // permanent rain, fire type attacks fail
   'Refrigerate', // normal moves are now ice type and 1.2x power
-  'Serene Grace', // secondary effects are twice as likely
-  'Simple', // stat changes are doubled
   'Storm Drain', // immune to water, +1 SpA when a water attack is used
   'Thick Fat', // resist fire and ice
   
   //
   //B-Tier and lower
   //
-  'Air Lock', // removes all weather effects
-  'Bulletproof', // immune to all ballistic moves
   'Compound Eyes', // 1.3x Acc
-  'Cute Charm', // if opposite gender, 30% chance of causing infatuation when hit by a contact move
-  'Effect Spore', // 30% chance of random status when hit by a contact move
-  'Electric Surge', // electric terrain on switch-in
-  'Flame Body', // 30% chance of burn when hit by a contact move
   'Full Metal Body', // immune to stat drops by other pokemon
   'Galvanize', // normal moves are now electric type and 1.2x power
-  'Harvest', // 50% chance to restore a used berry, 100% in sun
-  'Infiltrator', // ignores mist, safeguard, sub and screens
   'Intimidate', // -1 Opponents Atk on switch-in
   'Levitate', // immune to ground moves
-  'Long Reach', // contact moves no longer make contact
-  'Magician', // if no item, steal opponents on contact
-  'Neuroforce', // SE attacks 1.25x power
-  'No Guard', // moves cannot miss, enemies cannot miss you
   'Normalize', // all moves are normal type, 1.2x power if type was changed
   'Overcoat', // immune to weather damage and powder moves
-  'Pickpocket', // if no item, steal opponents when they make contact
-  'Pickup', // if no item, picks up one used by ally
   'Poison Point', // 30% chance of poisoning enemy when hit by a contact move
   'Poison Touch', // 30% chance of poisoning enemy on contact
   'Power Spot', // ally has 1.3x power
-  'Punk Rock', // recieve 0.5x Dmg from sound moves, deal 1.3x Dmg with sound moves
   'Sap Sipper', // immune to grass, +1 Atk when hit by a grass attack
   'Scrappy', // can hit ghosts with normal and fighting type attacks
   'Shed Skin', // 33% chance of curing status every turn
   'Shield Dust', // immune to secondary effects
-  'Sniper', // crits do 1.5x usual Dmg
   'Soul Heart', // when a mon faints, +1 SpA
-  'Soundproof', // immune to sound moves
-  'Steely Spirit', // this pokemon and its ally do 1.5x Dmg with steel type moves
-  'Stench', // 10% flinch chance
-  'Super Luck', // +1 crit chance
   'Synchronize', // when statused, opponent is too
-  'Wonder Skin' // status moves have 50% accuracy against you
 ]
 
 let natures = [
@@ -337,7 +304,7 @@ if (typeof require !== 'undefined' && require.main === module) {
     }
   }
 
-  console.log(`Generated ${sets.length} sets`);
+  console.log(`Generated ${sets.length} sets for ${mon.name}`);
   fs.writeFile(process.argv[2], sets.map(set => {
     return "=== [gen8metronomebattle] " + 
     `${set.species}, ${set.ability}, ${set.item}, ${set.nature}, ${(set.ivs.spe == 0 ? "min" : "neut")}-speed ===\n\n` +
