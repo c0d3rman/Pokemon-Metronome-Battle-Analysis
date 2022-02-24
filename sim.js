@@ -61,6 +61,8 @@ const scheduler = new Scheduler(); // Scheduler to make sure we don't have too m
                         winMatrix[j][i]++
                     }
                     pbar.increment();
+                }).catch(function (err) {
+                  console.log(err);
                 }));
             }
         }
