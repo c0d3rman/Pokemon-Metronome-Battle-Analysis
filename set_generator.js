@@ -73,6 +73,7 @@ let abilities = [
   'Desolate Land', // permanent sun, water attacks fail
   'Download', // +1 Atk or SpA, depending on opponents defensive stats
   'Flash Fire', // immunity to fire, fire moves 1.5x power when hit by a fire move
+  'Fluffy', // 2x Def, weak to fire
   'Friend Guard', // Ally takes 0.75x Dmg
   'Ice Scales', // 2x SpD
   'Imposter', // transform into opposing pokemon on switch-in
