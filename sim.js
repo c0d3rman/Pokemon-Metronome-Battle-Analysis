@@ -9,7 +9,7 @@ const commandLineArgs = require('command-line-args')
 const options = commandLineArgs([
   { name: 'challenger', alias: 'c', type: String, defaultOption: true },
   { name: 'opponent', alias: 'o', type: String, defaultValue: 'meta_teams.txt' },
-  { name: 'trials', alias: 'n', type: Number },
+  { name: 'trials', alias: 'n', type: Number, defaultValue: 100 },
   { name: 'worker', alias: 'w', type: String, defaultValue: 'workers/basic.js' },
   { name: 'agents', alias: 'a', type: String, multiple: true, defaultValue: 'agents/doNothing.js' },
   ])

@@ -1,0 +1,116 @@
+=== [gen8metronomebattle] Physical HO - Mega Heracross ===
+
+Heracross-Mega @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Adamant Nature  
+- Metronome  
+
+Heracross-Mega @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Adamant Nature  
+- Metronome  
+
+
+=== [gen8metronomebattle] Special HO - Mega Ampharos ===
+
+Ampharos-Mega @ Weakness Policy
+Ability: Download  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Quiet Nature  
+- Metronome
+
+Ampharos-Mega @ Weakness Policy
+Ability: Download  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Quiet Nature  
+- Metronome
+
+
+=== [gen8metronomebattle] Fluffy - Tyranilord ===
+
+Tyranitar @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Guzzlord @ Weakness Policy  
+Ability: Fluffy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome
+
+
+=== [gen8metronomebattle] Ice Scales - Mega Slowbro ===
+
+Slowbro-Mega @ Weakness Policy  
+Ability: Ice Scales
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Slowbro-Mega @ Weakness Policy  
+Ability: Ice Scales
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+=== [gen8metronomebattle] Flower Veil - Venusaur + Necturna ===
+
+Venusaur-Mega @ Weakness Policy  
+Ability: Flower Veil  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+Quiet Nature  
+- Metronome  
+
+Necturna @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature  
+- Metronome   
+
+
+=== [gen8metronomebattle] Stall - Bonk Stall ===
+
+Dusclops @ Eviolite
+Ability: Friend Guard
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+Type: Null @ Eviolite
+Ability: Friend Guard
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe 
+Brave Nature
+- Metronome
+
+
+=== [gen8metronomebattle] Imposter - Blissey ===
+
+Blissey @ Leppa Berry  
+Ability: Imposter  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD
+IVs: 0 Spe
+Relaxed Nature  
+- Metronome  
+
+Blissey @ Leppa Berry  
+Ability: Imposter  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+IVs: 0 Spe
+Relaxed Nature  
+- Metronome  
+
+
