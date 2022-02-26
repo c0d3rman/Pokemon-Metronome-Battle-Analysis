@@ -46,6 +46,7 @@ const totalTrials = trials * oppNames.length * (isChallengerMode ? challNames.le
 pbar.start(totalTrials, 0);
 
 let winMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.length).fill(0));
+const totalMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.length).fill(0));
 
 const pool = workerpool.pool(__dirname + '/' + worker, {workerType: "process", forkArgs: agents}); // Worker pool for multithreading
 const scheduler = new Scheduler(); // Scheduler to make sure we don't have too many promises "in flight" at once, to avoid memory issues
@@ -63,8 +64,14 @@ const scheduler = new Scheduler(); // Scheduler to make sure we don't have too m
                 scheduler.schedule(pool.exec('simBattle', [challenger, opponent]).then((winner) => {
                     if (winner == "P1") {
                         winMatrix[i][j]++
-                    } else if (!isChallengerMode) {
+                    // In round robin, battles are symmetric
+                    } else if (winner == "P2" && !isChallengerMode) {
                         winMatrix[j][i]++
+                    }
+                    // If simBattle returns something other than one of our two players, we ignore the battle
+                    if (["P1", "P2"].includes(winner)) {
+                        totalMatrix[i][j]++
+                        if (!isChallengerMode) totalMatrix[j][i]++
                     }
                     pbar.increment();
                 }).catch(function (err) {
@@ -81,7 +88,7 @@ const scheduler = new Scheduler(); // Scheduler to make sure we don't have too m
         pbar.stop();
 
         // Convert win matrix to percentages
-        winMatrix = winMatrix.map((row) => row.map((x) => (x / trials * 100)))
+        winMatrix = winMatrix.map((row, i) => row.map((x, j) => (x / totalMatrix[i][j] * 100)))
 
         // Calculate min and max vals for red-green coloring
         let minVal = Math.min(...winMatrix.map((row, i) => row.filter((_, j) => j != i)).flat())
