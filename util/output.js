@@ -73,9 +73,28 @@ function matprint(mat, stringifier, leftAlign=false) {
     });
 }
 
+// Save a replay of a battle in a human-viewable format
+// Ends up in the 'replays' folder
+// Duplicated from https://github.com/smogon/pokemon-showdown/blob/master/test/common.js
+function saveReplay(battle, fileName) {
+    const battleLog = battle.getDebugLog();
+    if (!fileName) fileName = 'test-replay';
+    const filePath = path.resolve(__dirname, `../replays/${fileName}-${Date.now()}.html`);
+    const out = fs.createWriteStream(filePath, {flags: 'a'});
+    out.on('open', () => {
+        out.write(
+            `<!DOCTYPE html>\n` +
+            `<script type="text/plain" class="battle-log-data">${battleLog}</script>\n` +
+            `<script src="https://play.pokemonshowdown.com/js/replay-embed.js"></script>\n`
+        );
+        out.end();
+    });
+}
+
 
 module.exports = {
     matprint: matprint,
     colorizeN: colorizeN,
-    colorize: colorize
+    colorize: colorize,
+    saveReplay: saveReplay
 }
