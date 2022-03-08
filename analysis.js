@@ -7,20 +7,24 @@ const fs = require('fs');
 const columnify = require('columnify');
 const chalk = require('chalk');
 const {colorize} = require('./util/output')
+const {typeEffectiveness} = require('./util/misc')
 
 
 // All moves that can be drawn by metronome
 const moves = fs.readFileSync("metronome_moves.txt").toString().replace(/\r/g, "").split("\n");
 // All pokemon that can be used
-const legalMons = Dex.species.all().filter(s => !s.types.includes('Steel') && s.bst <= 625 && s.name != "Pokestar Spirit")
-
-
+let legalMons = Dex.species.all().filter(s => !s.types.includes('Steel') && s.bst <= 625 && s.name != "Pokestar Spirit")
 
 const typeDict = {};
 const typePower = {};
 const physSpecDict = {'Physical': {num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0},
 						'Special': {num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0}}
 let zPower = 0;
+const randomFactorAverage = (1 + .85) / 2;
+const monDict = {}
+const moveDict = {}
+const attackingStat = 400;
+
 
 for (const move of moves) {
 	const m = Dex.moves.get(move);
@@ -76,10 +80,17 @@ for (const move of moves) {
 			}
 
 			if (!(m.type in typePower)) {
-				typePower[m.type] = [0, 0]
+				typePower[m.type] = [0, 0, 0, 0]
 			}
 			typePower[m.type][0] += power;
 			typePower[m.type][1]++;
+
+			moveDict[m.name] = power;
+
+			if (m.category == 'Physical') {
+				typePower[m.type][2] += power;
+				typePower[m.type][3]++;
+			}
 
 			physSpecDict[m.category].numPower++
 			physSpecDict[m.category].totalPower += power
@@ -112,7 +123,7 @@ console.log()
 console.log("The total power offered by each type (average power times number of moves):");
 const typeOverallData = Object.keys(typePower)
 	.sort((a, b) => typePower[b][0] - typePower[a][0])
-	.map((t, i) => ({place: '#'+(i+1), type: t, power: Math.round(typePower[t][0])}))
+	.map((t, i) => ({place: '#'+(i+1), type: t, power: Math.round(typePower[t][0]), "%phys": (typePower[t][3]/typePower[t][1]*100).toFixed(1), "%powerphys": (typePower[t][2]/typePower[t][0]*100).toFixed(1)}))
 console.log(columnify(typeOverallData, {showHeaders: false, minWidth: 5, dataTransform: (cell, _, i) => colorize(cell, typeOverallData[i].type)}))
 console.log("(Same disclaimer as the last table.)");
 console.log()
@@ -145,19 +156,8 @@ const defensiveTypeData = legalMons.reduce((dict, s) => {
 			pokemon: legalMons.reduce((a, b) => [...b.types].sort().join("/") == key && b.bst > a.bst ? b : a, {bst: -Infinity}),
 			total: 0
 		};
-		for (const t of Object.keys(typePower)) {
-			let damageMult = 1;
-			for (const type of s.types) {
-				const cat = Dex.types.get(type).damageTaken[t];
-				if (cat == 1) {
-					damageMult *= 2;
-				} else if (cat == 2) {
-					damageMult /= 2;
-				} else if (cat == 3) {
-					damageMult *= 0;
-				}
-			}
-			dict[key].total += typePower[t][0] * damageMult;
+		for (const t in typePower) {
+			dict[key].total += typePower[t][0] * typeEffectiveness(t, s.types);
 		}
 		dict[key].total = Math.round(dict[key].total);
 	}
@@ -283,4 +283,27 @@ console.log()
 
 console.log(`Using a Z-crystal on a move increases its power on average by ${(zPower / moves.length).toFixed(1)}
 (This accounts for the many status moves that get no boost whatsoever)`)
+console.log()
+
+for (const name of legalMons) {
+	const p = Dex.species.get(name);
+	const hp = (2 * p.baseStats.hp + 31 + 252/4) * 100 / 100 + 100 + 10
+	const def = (2 * p.baseStats.def + 31 + 252/4) * 100 / 100 + 5
+	const spd = (2 * p.baseStats.spd + 31 + 252/4) * 100 / 100 + 5
+
+	monDict[name] = Object.keys(moveDict)
+		.reduce((sum, move) => {
+			const m = Dex.moves.get(move);
+			return sum + (((2*100/5 + 2) * moveDict[move] * attackingStat/(m.category == 'Physical' ? def : spd)) / 50 + 2) * typeEffectiveness(m.type, p.types) * randomFactorAverage;
+		}, 0) * 100 / (Object.keys(moveDict).length * hp);
+}
+
+console.log(`The top ${numMons} defensive score pokemon are:`);
+console.log(columnify(legalMons
+	.map(name => Dex.species.get(name))
+	.map(p => ({name: p.name, type: p.types.map(colorize).join("/"), defensiveScore: monDict[p.name]}))
+	.sort((a, b) => a.defensiveScore - b.defensiveScore)
+	.slice(0, numMons)
+	.map((r, i) => {r.defensiveScore = r.defensiveScore.toFixed(2); r.place = '#'+(i+1); return r})
+, {minWidth: 5, columns: ['place', 'name', 'type', 'defensiveScore']}));
 console.log()
