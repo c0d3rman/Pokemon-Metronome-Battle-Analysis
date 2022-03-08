@@ -51,7 +51,7 @@ const totalMatrix = Array(oppNames.length).fill().map(()=>Array(challNames.lengt
 const pool = workerpool.pool(__dirname + '/' + worker, {workerType: "process", forkArgs: agents}); // Worker pool for multithreading
 const scheduler = new Scheduler(); // Scheduler to make sure we don't have too many promises "in flight" at once, to avoid memory issues
 
-// The simulation dispatcher (see simWorker.js for the actual battle code)
+// The simulation dispatcher (the worker file contains the actual battle simulation code)
 (async () => {
     for (let trial = 0; trial < trials; trial++) {
         for (let i = 0; i < oppNames.length; i++) {

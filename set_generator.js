@@ -259,7 +259,6 @@ if (typeof require !== 'undefined' && require.main === module) {
 		for (const ability of abilities) {
 			for (const nature of natures) {
 				for (const speed of speeds) {
-
 					const set = {
 						species: mon.name,
 						item: item,
