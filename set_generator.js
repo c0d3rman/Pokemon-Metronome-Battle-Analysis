@@ -5,7 +5,7 @@ const commandLineArgs = require('command-line-args')
 
 // Handle command line options
 const options = commandLineArgs([
-	{ name: 'species', alias: 's', type: String, defaultValue: 'Regirock', defaultOption: true },
+	{ name: 'species', alias: 's', type: String, defaultOption: true },
 	{ name: 'filename', alias: 'f', type: String, defaultValue: 'generated_teams.txt' }
 ]);
 const { species, filename } = options;
@@ -228,7 +228,19 @@ function validateSet(set) {
 		//
 
 		// Imposter should either be run on Blissey or with a species-unique item
-		|| (set.ability == "Imposter" && set.species != "Blissey" && !["Thick Club", "Light Ball", "Leek", "Stick", "Eviolite"].includes(item.name))
+		|| (set.ability == "Imposter" && set.species != "Blissey" && !item.itemUser)
+	)
+}
+
+function validateTeam(team) {
+	return !(
+		(team[0].ability == "Plus" && team[1].ability != "Plus")
+		|| (team[0].ability == "Plus" && team[1].ability != "Plus")
+
+		|| (team[0].ability == team[1].ability && ["Lightning Rod", "Storm Drain", "Flower Veil"].includes(team[0].ability))
+		|| (["Desolate Land", "Primordial Sea", "Delta Stream"].includes(team[0].ability) && ["Desolate Land", "Primordial Sea", "Delta Stream"].includes(team[1].ability))
+
+		|| (team[0].ability != "Flower Veil")
 	)
 }
 
@@ -239,8 +251,8 @@ if (typeof require !== 'undefined' && require.main === module) {
 
 	// If the species isnt valid, sub in a placeholder mon
 	if (!mon.exists) {
-		console.log('Invalid Pokemon name, using Regirock instead')
-		mon = Dex.species.get('Regirock')
+		console.log('Invalid Pokemon name')
+		process.exit()
 	}
 
 	for (const item of items) {
@@ -266,11 +278,30 @@ if (typeof require !== 'undefined' && require.main === module) {
 		}
 	}
 
-	console.log(`Generated ${sets.length} sets for ${mon.name}`);
-	fs.writeFile(filename, sets.map(set => {
+	const teams = []
+	const teamStrs = []
+	for (const set1 of sets) {
+		for (const set2 of sets) {
+			let set2c = structuredClone(set2)
+			set2c.species = "Necturna"
+			const team = [set1, set2c]
+
+			if (validateTeam(team)) {
+				const teamStr = Teams.export(team)
+				const reversedTeamStr = Teams.export([team[1], team[0]])
+				if (!teamStrs.includes(teamStr) && !teamStrs.includes(reversedTeamStr)) {
+					teams.push(team)
+					teamStrs.push(teamStr)
+				}
+			}
+		}
+	}
+
+	console.log(`Generated ${sets.length} sets and ${teams.length} teams for ${mon.name}`);
+	fs.writeFile(filename, teams.map(team => {
 		return "=== [gen8metronomebattle] " +
-			`${set.species}, ${set.ability}, ${set.item}, ${set.nature}, ${(set.ivs.spe == 0 ? "min" : "neut")}-speed ===\n\n` +
-			Teams.export([set, set]) + "\n\n"
+			`${team[0].species}, ${team[0].ability}, ${team[0].item}, ${team[0].nature}, ${(team[0].ivs.spe == 0 ? "min" : "neut")}-speed + ${team[1].species}, ${team[1].ability}, ${team[1].item}, ${team[1].nature}, ${(team[1].ivs.spe == 0 ? "min" : "neut")}-speed ===\n\n` +
+			Teams.export(team) + "\n\n"
 	}).join(""), () => { })
 }
 
