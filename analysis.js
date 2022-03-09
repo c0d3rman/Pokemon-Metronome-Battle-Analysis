@@ -5,7 +5,6 @@ const numMons = 50;
 const {Dex} = require('./pokemon-showdown');
 const fs = require('fs');
 const columnify = require('columnify');
-const chalk = require('chalk');
 const {colorize} = require('./util/output')
 const {typeEffectiveness} = require('./util/misc')
 
