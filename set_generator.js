@@ -240,7 +240,7 @@ function validateTeam(team) {
 		|| (team[0].ability == team[1].ability && ["Lightning Rod", "Storm Drain", "Flower Veil"].includes(team[0].ability))
 		|| (["Desolate Land", "Primordial Sea", "Delta Stream"].includes(team[0].ability) && ["Desolate Land", "Primordial Sea", "Delta Stream"].includes(team[1].ability))
 
-		|| (team[0].ability != "Flower Veil")
+		|| JSON.stringify(team[0]) != JSON.stringify(team[1])
 	)
 }
 
@@ -249,7 +249,7 @@ if (typeof require !== 'undefined' && require.main === module) {
 	const sets = []
 	let mon = Dex.species.get(species)
 
-	// If the species isnt valid, sub in a placeholder mon
+	// If the species isn't valid, die
 	if (!mon.exists) {
 		console.log('Invalid Pokemon name')
 		process.exit()
@@ -281,9 +281,7 @@ if (typeof require !== 'undefined' && require.main === module) {
 	const teamStrs = []
 	for (const set1 of sets) {
 		for (const set2 of sets) {
-			let set2c = structuredClone(set2)
-			set2c.species = "Necturna"
-			const team = [set1, set2c]
+			const team = [set1, set2]
 
 			if (validateTeam(team)) {
 				const teamStr = Teams.export(team)

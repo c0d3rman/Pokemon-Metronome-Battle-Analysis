@@ -1,0 +1,4392 @@
+=== [gen8metronomebattle] Regirock, Comatose, Weakness Policy, Adamant, min-speed + Regirock, Comatose, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Weakness Policy, Brave, min-speed + Regirock, Comatose, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Weakness Policy, Relaxed, min-speed + Regirock, Comatose, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Weakness Policy, Sassy, min-speed + Regirock, Comatose, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Weakness Policy, Adamant, min-speed + Regirock, Intrepid Sword, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Weakness Policy, Brave, min-speed + Regirock, Intrepid Sword, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Weakness Policy, Relaxed, min-speed + Regirock, Intrepid Sword, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Weakness Policy, Sassy, min-speed + Regirock, Intrepid Sword, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Weakness Policy, Adamant, min-speed + Regirock, Magic Bounce, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Weakness Policy, Brave, min-speed + Regirock, Magic Bounce, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Weakness Policy, Relaxed, min-speed + Regirock, Magic Bounce, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Weakness Policy, Sassy, min-speed + Regirock, Magic Bounce, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Weakness Policy, Adamant, min-speed + Regirock, Magic Guard, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Weakness Policy, Brave, min-speed + Regirock, Magic Guard, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Weakness Policy, Relaxed, min-speed + Regirock, Magic Guard, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Weakness Policy, Sassy, min-speed + Regirock, Magic Guard, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Weakness Policy, Adamant, min-speed + Regirock, Mold Breaker, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Weakness Policy, Brave, min-speed + Regirock, Mold Breaker, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Weakness Policy, Relaxed, min-speed + Regirock, Mold Breaker, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Weakness Policy, Sassy, min-speed + Regirock, Mold Breaker, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Weakness Policy, Adamant, min-speed + Regirock, Prism Armor, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Weakness Policy, Brave, min-speed + Regirock, Prism Armor, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Weakness Policy, Relaxed, min-speed + Regirock, Prism Armor, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Weakness Policy, Sassy, min-speed + Regirock, Prism Armor, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Weakness Policy, Adamant, min-speed + Regirock, Unaware, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Weakness Policy, Brave, min-speed + Regirock, Unaware, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Weakness Policy, Relaxed, min-speed + Regirock, Unaware, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Weakness Policy, Sassy, min-speed + Regirock, Unaware, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Weakness Policy, Adamant, min-speed + Regirock, As One(Glastrier), Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Weakness Policy, Brave, min-speed + Regirock, As One(Glastrier), Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Weakness Policy, Relaxed, min-speed + Regirock, As One(Glastrier), Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Weakness Policy, Sassy, min-speed + Regirock, As One(Glastrier), Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Weakness Policy, Adamant, min-speed + Regirock, Fluffy, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Weakness Policy, Brave, min-speed + Regirock, Fluffy, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Weakness Policy, Relaxed, min-speed + Regirock, Fluffy, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Weakness Policy, Sassy, min-speed + Regirock, Fluffy, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Weakness Policy, Adamant, min-speed + Regirock, Friend Guard, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Weakness Policy, Brave, min-speed + Regirock, Friend Guard, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Weakness Policy, Relaxed, min-speed + Regirock, Friend Guard, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Weakness Policy, Sassy, min-speed + Regirock, Friend Guard, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Weakness Policy, Adamant, min-speed + Regirock, Ice Scales, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Weakness Policy, Brave, min-speed + Regirock, Ice Scales, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Weakness Policy, Relaxed, min-speed + Regirock, Ice Scales, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Weakness Policy, Sassy, min-speed + Regirock, Ice Scales, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Weakness Policy, Adamant, min-speed + Regirock, Thick Fat, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Weakness Policy, Brave, min-speed + Regirock, Thick Fat, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Weakness Policy, Relaxed, min-speed + Regirock, Thick Fat, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Weakness Policy, Sassy, min-speed + Regirock, Thick Fat, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Weakness Policy, Adamant, min-speed + Regirock, Compound Eyes, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Weakness Policy, Brave, min-speed + Regirock, Compound Eyes, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Weakness Policy, Relaxed, min-speed + Regirock, Compound Eyes, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Weakness Policy, Sassy, min-speed + Regirock, Compound Eyes, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Weakness Policy, Adamant, min-speed + Regirock, Full Metal Body, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Weakness Policy, Brave, min-speed + Regirock, Full Metal Body, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Weakness Policy, Relaxed, min-speed + Regirock, Full Metal Body, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Weakness Policy, Sassy, min-speed + Regirock, Full Metal Body, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Weakness Policy, Adamant, min-speed + Regirock, Intimidate, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Weakness Policy, Brave, min-speed + Regirock, Intimidate, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Weakness Policy, Relaxed, min-speed + Regirock, Intimidate, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Weakness Policy, Sassy, min-speed + Regirock, Intimidate, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Weakness Policy, Adamant, min-speed + Regirock, Poison Touch, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Weakness Policy, Brave, min-speed + Regirock, Poison Touch, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Weakness Policy, Relaxed, min-speed + Regirock, Poison Touch, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Weakness Policy, Sassy, min-speed + Regirock, Poison Touch, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Weakness Policy, Adamant, min-speed + Regirock, Power Spot, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Weakness Policy, Brave, min-speed + Regirock, Power Spot, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Weakness Policy, Relaxed, min-speed + Regirock, Power Spot, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Weakness Policy, Sassy, min-speed + Regirock, Power Spot, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Weakness Policy, Adamant, min-speed + Regirock, Sap Sipper, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Weakness Policy, Brave, min-speed + Regirock, Sap Sipper, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Weakness Policy, Relaxed, min-speed + Regirock, Sap Sipper, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Weakness Policy, Sassy, min-speed + Regirock, Sap Sipper, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Weakness Policy, Adamant, min-speed + Regirock, Scrappy, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Weakness Policy, Brave, min-speed + Regirock, Scrappy, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Weakness Policy, Relaxed, min-speed + Regirock, Scrappy, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Weakness Policy, Sassy, min-speed + Regirock, Scrappy, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Weakness Policy, Adamant, min-speed + Regirock, Synchronize, Weakness Policy, Adamant, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Weakness Policy, Brave, min-speed + Regirock, Synchronize, Weakness Policy, Brave, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Weakness Policy, Relaxed, min-speed + Regirock, Synchronize, Weakness Policy, Relaxed, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Weakness Policy, Sassy, min-speed + Regirock, Synchronize, Weakness Policy, Sassy, min-speed ===
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Weakness Policy  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Choice Band, Adamant, min-speed + Regirock, Comatose, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Choice Band, Brave, min-speed + Regirock, Comatose, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Choice Band, Relaxed, min-speed + Regirock, Comatose, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Choice Band, Sassy, min-speed + Regirock, Comatose, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Choice Band, Adamant, min-speed + Regirock, Intrepid Sword, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Choice Band, Brave, min-speed + Regirock, Intrepid Sword, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Choice Band, Relaxed, min-speed + Regirock, Intrepid Sword, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Choice Band, Sassy, min-speed + Regirock, Intrepid Sword, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Choice Band, Adamant, min-speed + Regirock, Magic Bounce, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Choice Band, Brave, min-speed + Regirock, Magic Bounce, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Choice Band, Relaxed, min-speed + Regirock, Magic Bounce, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Choice Band, Sassy, min-speed + Regirock, Magic Bounce, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Choice Band, Adamant, min-speed + Regirock, Magic Guard, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Choice Band, Brave, min-speed + Regirock, Magic Guard, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Choice Band, Relaxed, min-speed + Regirock, Magic Guard, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Choice Band, Sassy, min-speed + Regirock, Magic Guard, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Choice Band, Adamant, min-speed + Regirock, Mold Breaker, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Choice Band, Brave, min-speed + Regirock, Mold Breaker, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Choice Band, Relaxed, min-speed + Regirock, Mold Breaker, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Choice Band, Sassy, min-speed + Regirock, Mold Breaker, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Choice Band, Adamant, min-speed + Regirock, Prism Armor, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Choice Band, Brave, min-speed + Regirock, Prism Armor, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Choice Band, Relaxed, min-speed + Regirock, Prism Armor, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Choice Band, Sassy, min-speed + Regirock, Prism Armor, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Choice Band, Adamant, min-speed + Regirock, Unaware, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Choice Band, Brave, min-speed + Regirock, Unaware, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Choice Band, Relaxed, min-speed + Regirock, Unaware, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Choice Band, Sassy, min-speed + Regirock, Unaware, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Choice Band, Adamant, min-speed + Regirock, As One(Glastrier), Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Choice Band, Brave, min-speed + Regirock, As One(Glastrier), Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Choice Band, Relaxed, min-speed + Regirock, As One(Glastrier), Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Choice Band, Sassy, min-speed + Regirock, As One(Glastrier), Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Choice Band, Adamant, min-speed + Regirock, Fluffy, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Choice Band, Brave, min-speed + Regirock, Fluffy, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Choice Band, Relaxed, min-speed + Regirock, Fluffy, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Choice Band, Sassy, min-speed + Regirock, Fluffy, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Choice Band, Adamant, min-speed + Regirock, Friend Guard, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Choice Band, Brave, min-speed + Regirock, Friend Guard, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Choice Band, Relaxed, min-speed + Regirock, Friend Guard, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Choice Band, Sassy, min-speed + Regirock, Friend Guard, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Choice Band, Adamant, min-speed + Regirock, Ice Scales, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Choice Band, Brave, min-speed + Regirock, Ice Scales, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Choice Band, Relaxed, min-speed + Regirock, Ice Scales, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Choice Band, Sassy, min-speed + Regirock, Ice Scales, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Choice Band, Adamant, min-speed + Regirock, Thick Fat, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Choice Band, Brave, min-speed + Regirock, Thick Fat, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Choice Band, Relaxed, min-speed + Regirock, Thick Fat, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Choice Band, Sassy, min-speed + Regirock, Thick Fat, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Choice Band, Adamant, min-speed + Regirock, Compound Eyes, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Choice Band, Brave, min-speed + Regirock, Compound Eyes, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Choice Band, Relaxed, min-speed + Regirock, Compound Eyes, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Choice Band, Sassy, min-speed + Regirock, Compound Eyes, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Choice Band, Adamant, min-speed + Regirock, Full Metal Body, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Choice Band, Brave, min-speed + Regirock, Full Metal Body, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Choice Band, Relaxed, min-speed + Regirock, Full Metal Body, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Choice Band, Sassy, min-speed + Regirock, Full Metal Body, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Choice Band, Adamant, min-speed + Regirock, Intimidate, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Choice Band, Brave, min-speed + Regirock, Intimidate, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Choice Band, Relaxed, min-speed + Regirock, Intimidate, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Choice Band, Sassy, min-speed + Regirock, Intimidate, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Choice Band, Adamant, min-speed + Regirock, Poison Touch, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Choice Band, Brave, min-speed + Regirock, Poison Touch, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Choice Band, Relaxed, min-speed + Regirock, Poison Touch, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Choice Band, Sassy, min-speed + Regirock, Poison Touch, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Choice Band, Adamant, min-speed + Regirock, Power Spot, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Choice Band, Brave, min-speed + Regirock, Power Spot, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Choice Band, Relaxed, min-speed + Regirock, Power Spot, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Choice Band, Sassy, min-speed + Regirock, Power Spot, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Choice Band, Adamant, min-speed + Regirock, Sap Sipper, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Choice Band, Brave, min-speed + Regirock, Sap Sipper, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Choice Band, Relaxed, min-speed + Regirock, Sap Sipper, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Choice Band, Sassy, min-speed + Regirock, Sap Sipper, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Choice Band, Adamant, min-speed + Regirock, Scrappy, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Choice Band, Brave, min-speed + Regirock, Scrappy, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Choice Band, Relaxed, min-speed + Regirock, Scrappy, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Choice Band, Sassy, min-speed + Regirock, Scrappy, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Choice Band, Adamant, min-speed + Regirock, Synchronize, Choice Band, Adamant, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Choice Band, Brave, min-speed + Regirock, Synchronize, Choice Band, Brave, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Choice Band, Relaxed, min-speed + Regirock, Synchronize, Choice Band, Relaxed, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Choice Band, Sassy, min-speed + Regirock, Synchronize, Choice Band, Sassy, min-speed ===
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Choice Band  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Lum Berry, Adamant, min-speed + Regirock, Comatose, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Lum Berry, Brave, min-speed + Regirock, Comatose, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Lum Berry, Relaxed, min-speed + Regirock, Comatose, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Comatose, Lum Berry, Sassy, min-speed + Regirock, Comatose, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Comatose  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Lum Berry, Adamant, min-speed + Regirock, Intrepid Sword, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Lum Berry, Brave, min-speed + Regirock, Intrepid Sword, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Lum Berry, Relaxed, min-speed + Regirock, Intrepid Sword, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intrepid Sword, Lum Berry, Sassy, min-speed + Regirock, Intrepid Sword, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intrepid Sword  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Lum Berry, Adamant, min-speed + Regirock, Magic Bounce, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Lum Berry, Brave, min-speed + Regirock, Magic Bounce, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Lum Berry, Relaxed, min-speed + Regirock, Magic Bounce, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Bounce, Lum Berry, Sassy, min-speed + Regirock, Magic Bounce, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Bounce  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Lum Berry, Adamant, min-speed + Regirock, Magic Guard, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Lum Berry, Brave, min-speed + Regirock, Magic Guard, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Lum Berry, Relaxed, min-speed + Regirock, Magic Guard, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Lum Berry, Sassy, min-speed + Regirock, Magic Guard, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Lum Berry, Adamant, min-speed + Regirock, Mold Breaker, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Lum Berry, Brave, min-speed + Regirock, Mold Breaker, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Lum Berry, Relaxed, min-speed + Regirock, Mold Breaker, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Mold Breaker, Lum Berry, Sassy, min-speed + Regirock, Mold Breaker, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Lum Berry, Adamant, min-speed + Regirock, Prism Armor, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Lum Berry, Brave, min-speed + Regirock, Prism Armor, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Lum Berry, Relaxed, min-speed + Regirock, Prism Armor, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Prism Armor, Lum Berry, Sassy, min-speed + Regirock, Prism Armor, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Prism Armor  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Lum Berry, Adamant, min-speed + Regirock, Unaware, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Lum Berry, Brave, min-speed + Regirock, Unaware, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Lum Berry, Relaxed, min-speed + Regirock, Unaware, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Unaware, Lum Berry, Sassy, min-speed + Regirock, Unaware, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Unaware  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Lum Berry, Adamant, min-speed + Regirock, As One(Glastrier), Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Lum Berry, Brave, min-speed + Regirock, As One(Glastrier), Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Lum Berry, Relaxed, min-speed + Regirock, As One(Glastrier), Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, As One(Glastrier), Lum Berry, Sassy, min-speed + Regirock, As One(Glastrier), Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: As One(Glastrier)  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Lum Berry, Adamant, min-speed + Regirock, Fluffy, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Lum Berry, Brave, min-speed + Regirock, Fluffy, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Lum Berry, Relaxed, min-speed + Regirock, Fluffy, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Fluffy, Lum Berry, Sassy, min-speed + Regirock, Fluffy, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Fluffy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Lum Berry, Adamant, min-speed + Regirock, Friend Guard, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Lum Berry, Brave, min-speed + Regirock, Friend Guard, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Lum Berry, Relaxed, min-speed + Regirock, Friend Guard, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Friend Guard, Lum Berry, Sassy, min-speed + Regirock, Friend Guard, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Lum Berry, Adamant, min-speed + Regirock, Ice Scales, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Lum Berry, Brave, min-speed + Regirock, Ice Scales, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Lum Berry, Relaxed, min-speed + Regirock, Ice Scales, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Ice Scales, Lum Berry, Sassy, min-speed + Regirock, Ice Scales, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Ice Scales  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Lum Berry, Adamant, min-speed + Regirock, Thick Fat, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Lum Berry, Brave, min-speed + Regirock, Thick Fat, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Lum Berry, Relaxed, min-speed + Regirock, Thick Fat, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Thick Fat, Lum Berry, Sassy, min-speed + Regirock, Thick Fat, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Thick Fat  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Lum Berry, Adamant, min-speed + Regirock, Compound Eyes, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Lum Berry, Brave, min-speed + Regirock, Compound Eyes, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Lum Berry, Relaxed, min-speed + Regirock, Compound Eyes, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Compound Eyes, Lum Berry, Sassy, min-speed + Regirock, Compound Eyes, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Lum Berry, Adamant, min-speed + Regirock, Full Metal Body, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Lum Berry, Brave, min-speed + Regirock, Full Metal Body, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Lum Berry, Relaxed, min-speed + Regirock, Full Metal Body, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Full Metal Body, Lum Berry, Sassy, min-speed + Regirock, Full Metal Body, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Full Metal Body  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Lum Berry, Adamant, min-speed + Regirock, Intimidate, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Lum Berry, Brave, min-speed + Regirock, Intimidate, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Lum Berry, Relaxed, min-speed + Regirock, Intimidate, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Intimidate, Lum Berry, Sassy, min-speed + Regirock, Intimidate, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Intimidate  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Lum Berry, Adamant, min-speed + Regirock, Poison Touch, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Lum Berry, Brave, min-speed + Regirock, Poison Touch, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Lum Berry, Relaxed, min-speed + Regirock, Poison Touch, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Poison Touch, Lum Berry, Sassy, min-speed + Regirock, Poison Touch, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Poison Touch  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Lum Berry, Adamant, min-speed + Regirock, Power Spot, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Lum Berry, Brave, min-speed + Regirock, Power Spot, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Lum Berry, Relaxed, min-speed + Regirock, Power Spot, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Power Spot, Lum Berry, Sassy, min-speed + Regirock, Power Spot, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Power Spot  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Lum Berry, Adamant, min-speed + Regirock, Sap Sipper, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Lum Berry, Brave, min-speed + Regirock, Sap Sipper, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Lum Berry, Relaxed, min-speed + Regirock, Sap Sipper, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Sap Sipper, Lum Berry, Sassy, min-speed + Regirock, Sap Sipper, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Sap Sipper  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Lum Berry, Adamant, min-speed + Regirock, Scrappy, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Lum Berry, Brave, min-speed + Regirock, Scrappy, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Lum Berry, Relaxed, min-speed + Regirock, Scrappy, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Scrappy, Lum Berry, Sassy, min-speed + Regirock, Scrappy, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Scrappy  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Lum Berry, Adamant, min-speed + Regirock, Synchronize, Lum Berry, Adamant, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Lum Berry, Brave, min-speed + Regirock, Synchronize, Lum Berry, Brave, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Lum Berry, Relaxed, min-speed + Regirock, Synchronize, Lum Berry, Relaxed, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Synchronize, Lum Berry, Sassy, min-speed + Regirock, Synchronize, Lum Berry, Sassy, min-speed ===
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Life Orb, Adamant, min-speed + Regirock, Magic Guard, Life Orb, Adamant, min-speed ===
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Adamant Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Life Orb, Brave, min-speed + Regirock, Magic Guard, Life Orb, Brave, min-speed ===
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Life Orb, Relaxed, min-speed + Regirock, Magic Guard, Life Orb, Relaxed, min-speed ===
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+
+=== [gen8metronomebattle] Regirock, Magic Guard, Life Orb, Sassy, min-speed + Regirock, Magic Guard, Life Orb, Sassy, min-speed ===
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+Regirock @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Spe  
+- Metronome  
+
+
+

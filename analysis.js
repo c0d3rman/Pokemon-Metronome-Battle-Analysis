@@ -298,6 +298,7 @@ for (const name of legalMons) {
 }
 
 console.log(`The top ${numMons} defensive score pokemon are:`);
+console.log(`Defensive score represents the average percent HP damage the Pokemon would take from an attacker with an Atk and SpA of ${attackingStat} that pulls a random attack from Metronome. This accounts for typing, physical vs. special attacks, and total HP. Lower is better.`)
 console.log(columnify(legalMons
 	.map(name => Dex.species.get(name))
 	.map(p => ({name: p.name, type: p.types.map(colorize).join("/"), defensiveScore: monDict[p.name]}))

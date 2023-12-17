@@ -1,0 +1,129 @@
+Because moves in Pokemon are extremely varied and there are many special cases, this analysis cannot take into account every single move perfectly. Here is a non-comprehensive list of things it misses but that cannot be accounted for (either because they are too variable or not quantifiable):
+- It is better to be immune to move types that have more dangerous secondary effects (e.g. Poison).
+- It is slightly better to be weak to 2-turn moves than 1-turn moves, because you can react to them by dynamaxing.
+- It is slightly worse to be weak to moves without recoil than moves with recoil, because it means that your opponent is more likely to be hurt when they significantly damage you.
+- It is slightly better to resist draining moves, since it means giving your opponent less healing.
+- It is slightly better to resist Grass-, Electric-, or Psychic-type moves, and slightly worse to resist Dragon-type moves, because of the possiblity of a terrain being active.
+- The moves Darkest Lariat and Sacred Sword ignore defense and evasion stat changes, and so deal a slightly different expected amount of damage than their base power would suggest. (How different and in which direction depends on whether your enemies are more likely to incur positive or negative stat changes in those categories, which varies.)
+- The moves Body Slam, Stomp, Astonish, Extrasensory, Dragon Rush, Shadow Force, Heat Crash, Heavy Slam, Phantom Force, and Flying Press are slightly better than the analysis would otherwise suggest because they are guaranteed to hit a Pokemon that has used Minimize and deal double damage to such a Pokemon.
+- The move Dragon Darts has complicated interactions based on both Pokemon on your team, and may deal damage even if you are immune to it, or deal half damage.
+
+TODO
+- OHKO moves
+- Dream Eater
+- Bonemerang - check to make sure it works (as representative for fixed 2-hit moves)
+- Spread moves
+- Self destructing moves?
+- Freeze-Dry
+- Guaranteed-hit moves vs 100 acc moves
+- Sucker Punch, Last Resort
+
+type changing effects, Tar Shot, Roost, Smack Down
+power split and guard split
+relative commonality of physical vs special defense or attack boosts
+weather-based accuracy changing moves like Thunder, Hurricane, Hail
+weather-based charging moves like Solar Beam, Solar Blade
+2 turn moves might fail b/c choice items on enemy
+Acrobatics
+Assurance
+Avalanche
+Beat Up
+Bind, Fire Spin, Infestation, Magma Storm, Sand Tomb, Whirlpool, Wrap
+Bolt Beak, Fishious Rend
+Brine
+Burn Up
+Crush Grip
+Earthquake + Dig
+Echoed Voice
+Electro Ball, Gyro Ball
+Endeavor
+Eruption, Flail
+Expanding Force
+Facade
+Fake Out, First Impression
+False Swipe, Hold Back
+Final Gambit
+Fire Pledge, Grass Pledge, Water Pledge (do they even work?)
+Fusion Bolt, Fusion Flare (do they even work?)
+Flying Press
+Fling
+Future Sight, Doom Desire (slot locked)
+Foul Play
+Heat Crash, Heavy Slam
+Hex
+Earthquake and co in grassy terrain
+High crit rate moves?
+Always-crit moves - Frost Breath, Storm Throw
+
+
+Force Palm
+
+Fury Cutter
+Grass Knot
+Gust
+Horn Attack
+Hurricane
+Hyper Beam - leaves you stunned
+Hyper Voice - goes through sub (and other moves like it)
+Knock Off
+Lash Out
+Lick
+Low Kick
+Low Sweep
+Luster Purge
+Magnet Rise
+Metal Burst
+Multi-Attack
+Night Shade
+Overheat
+Pain Split
+Payback
+Petal Dance, Outrage, Thrash, Uproar
+Poltergeist
+
+
+Mist Ball
+Night Daze
+Night Slash
+Octazooka
+Petal Blizzard
+Pluck
+Power Gem
+Power Trick
+Present
+Prismatic Laser
+Psybeam
+Psychic Fangs
+Psycho Cut
+Psyshock
+Psystrike
+Retaliate
+Revenge
+Reversal
+Rising Voltage
+Rollout
+Round
+Sacred Fire
+Seismic Toss
+Shell Side Arm
+Shock Wave
+Snipe Shot
+Spacial Rend
+Sparkling Aria
+Spit Up
+Steel Roller
+Stomping Tantrum
+Stone Edge
+Stored Power, Power Trip
+Super Fang
+Surf
+Tar Shot
+Terrain Pulse
+Throat Chop
+Twister
+Vacuum Wave
+Venoshock
+Vise Grip
+Vital Throw
+Water Spout
+Weather Ball
