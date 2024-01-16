@@ -1,17 +1,29 @@
 // Number of mons you want displayed in lists
 const numMons = 20;
 // How much weight you want to give to power vs. bulk (1 is equal, 2 means value power 2x more)
-const powerWeight = 10;
+// const powerWeight = 10;
+const powerWeight = 5;
 // Should we assume NFEs are holding Eviolite?
 const eviolite = false;
 // Should we adjust bulk for typing? (Turn this off if you're planning to Tera the mon)
 const adjustBulkForTyping = true;
+// Gives every mon Fluffy.
+const fluffy = true;
+// Gives every mon Ice Scales.
+const icescales = false;
+// Set this to tera all mons to a given type. (Or set to false to disable)
+// const teraType = "Poison";
+const teraType = false;
+// Add disabled types (e.g. Fire for Primordial Sea or Electric for Lightning Rod).
+const disabledTypes = ["Fire"];
 
 
 const { Dex } = require('./pokemon-showdown');
 const columnify = require('columnify');
 const { colorize } = require('./util/output')
-const { typeEffectiveness } = require('./util/misc')
+let { typeEffectiveness } = require('./util/misc')
+
+
 
 
 
@@ -20,6 +32,22 @@ const noMetronome = Dex.moves.get("Metronome").noMetronome;
 const moves = Dex.moves.all().filter(m => !noMetronome.includes(m.name));
 // All pokemon that can be used
 let legalMons = Dex.species.all().filter(s => !s.types.includes('Steel') && s.bst <= 625 && s.name != "Pokestar Spirit")
+legalMons.push({ name: "Pecharunt", types: ["Poison", "Ghost"], baseStats: { hp: 88, atk: 88, def: 160, spa: 88, spd: 88, spe: 88 }, bst: 600 })
+legalMons.push({ name: "Hydrapple", types: ["Grass", "Dragon"], baseStats: { hp: 106, atk: 80, def: 110, spa: 120, spd: 80, spe: 44 }, bst: 540 })
+
+// legalMons = legalMons.filter(m => m.types.includes("Ice"))
+
+// Adjust type effectiveness for Fluffy and immune types
+if (fluffy) {
+	typeEffectiveness = (function (_super) {
+		return function () { return _super.apply(this, arguments) * (arguments[1].includes("Fire") ? 2 : 1) * (disabledTypes.includes(arguments[0]) ? 0 : 1); };
+	})(typeEffectiveness);
+}
+
+// Adjust typing for tera
+if (teraType) {
+	legalMons = legalMons.map(m => {m.types = [teraType]; return m})
+}
 
 // Adapted from https://github.com/smogon/damage-calc
 const NATURES = { Adamant: ['atk', 'spa'], Bashful: ['spa', 'spa'], Bold: ['def', 'atk'], Brave: ['atk', 'spe'], Calm: ['spd', 'atk'], Careful: ['spd', 'spa'], Docile: ['def', 'def'], Gentle: ['spd', 'def'], Hardy: ['atk', 'atk'], Hasty: ['spe', 'def'], Impish: ['def', 'spa'], Jolly: ['spe', 'spa'], Lax: ['def', 'spd'], Lonely: ['atk', 'def'], Mild: ['spa', 'def'], Modest: ['spa', 'atk'], Naive: ['spe', 'spd'], Naughty: ['atk', 'spd'], Quiet: ['spa', 'spe'], Quirky: ['spd', 'spd'], Rash: ['spa', 'spd'], Relaxed: ['def', 'spe'], Sassy: ['spd', 'spe'], Serious: ['spe', 'spe'], Timid: ['spe', 'atk'], };
@@ -35,22 +63,20 @@ function calcStatADV(stat, base, iv = 31, ev = 255, level = 100, nature = 'Bashf
 			: mods[1] === stat
 				? 0.9
 				: 1;
-	return Math.floor((Math.floor(((base * 2 + iv + Math.floor(ev / 4)) * level) / 100) + 5) * n);
+	return Math.floor((Math.floor(((base * 2 + iv + Math.floor(ev / 4)) * level) / 100) + 5) * n)// * (stat === 'def' ? 1.5 : 1); // Hack for snow
 }
 
 
 const typeDict = {};
 const typePower = {};
-const physSpecDict = {
-	'Physical': { num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0 },
-	'Special': { num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0 }
-}
 let zPower = 0;
-const randomFactorAverage = (1 + .85) / 2;
-const monDict = {}
 const moveDict = {}
-const attackingStat = 400;
-const technicianDict = { num: 0, total: 0, numTechnician: 0 };
+const tallyDict = {
+	'Physical': { num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0 },
+	'Special': { num: 0, numPower: 0, totalPower: 0, totalAcc: 0, contact: 0 },
+	technician: { num: 0, total: 0, numApplicable: 0 },
+	compoundEyes: { num: 0, total: 0, numApplicable: 0 },
+};
 
 
 function calc_stats(mon) {
@@ -62,15 +88,18 @@ function calc_stats(mon) {
 		stats['def'] *= 1.5;
 		stats['spd'] *= 1.5;
 	}
+	if (icescales) {
+		stats['spd'] *= 2;
+	}
 	// Bulks as defined in https://www.smogon.com/forums/threads/a-new-way-of-thinking-about-damage.3729061/
 	stats['physBulk'] = stats.hp * stats.def / 10000;
 	stats['specBulk'] = stats.hp * stats.spd / 10000;
 	// Type-adjusted bulk
-	stats['physBulkAdj'] = stats['physBulk'] * physSpecDict['Physical'].totalPower / Object.entries(typePower).reduce((sum, [type, d]) => sum + d.totalPhys * typeEffectiveness(type, mon.types), 0)
-	stats['specBulkAdj'] = stats['specBulk'] * physSpecDict['Special'].totalPower / Object.entries(typePower).reduce((sum, [type, d]) => sum + d.totalSpec * typeEffectiveness(type, mon.types), 0)
+	stats['physBulkAdj'] = stats['physBulk'] * tallyDict['Physical'].totalPower / Object.entries(typePower).reduce((sum, [type, d]) => sum + d.totalPhys * typeEffectiveness(type, mon.types), 0)
+	stats['specBulkAdj'] = stats['specBulk'] * tallyDict['Special'].totalPower / Object.entries(typePower).reduce((sum, [type, d]) => sum + d.totalSpec * typeEffectiveness(type, mon.types), 0)
 	// Power based on average of all attacking Metronome moves. Does not account for STAB
-	stats['physPower'] = (physSpecDict["Physical"].totalPower / physSpecDict["Physical"].numPower) * stats.atk * 0.714 / 10000;
-	stats['specPower'] = (physSpecDict["Special"].totalPower / physSpecDict["Special"].numPower) * stats.spa * 0.714 / 10000;
+	stats['physPower'] = (tallyDict["Physical"].totalPower / tallyDict["Physical"].numPower) * stats.atk * 0.714 / 10000;
+	stats['specPower'] = (tallyDict["Special"].totalPower / tallyDict["Special"].numPower) * stats.spa * 0.714 / 10000;
 	return stats;
 }
 
@@ -92,42 +121,56 @@ for (const move of moves) {
 	// Ignore non-attacking moves for the rest of the calculations.
 	if (!['Physical', 'Special'].includes(move.category)) continue;
 
+	// Ignore moves of disabled types.
+	if (disabledTypes.includes(move.type)) continue;
+
 	// Tally physical-special quantities.
-	physSpecDict[move.category].num++
-	physSpecDict[move.category].totalAcc += (move.accuracy == true ? 100 : move.accuracy)
-	physSpecDict[move.category].contact += (move.flags.contact ? 1 : 0)
+	tallyDict[move.category].num++
+	tallyDict[move.category].totalAcc += (move.accuracy == true ? 100 : move.accuracy)
+	tallyDict[move.category].contact += (move.flags.contact ? 1 : 0)
 
 	// Ignore variable-BP moves like Grass Knot since we can't really calculate their average power.
 	if (move.basePower == 0) continue;
 
 	// Calculate effective power of the move (accounting for accuracy).
-	let power = move.basePower;
-	if (move.accuracy != true && move.accuracy != 100) {
-		power *= move.accuracy / 100;
-	}
-
-	// Handle multihit
-	// -> Triple Kick and Triple Axel (also Population Bomb but Metronome can't call it for some reason)
-	if (move.multiaccuracy) {
-		power = 0;
-		const a = move.accuracy / 100;
-		let totalP = 0;
-		for (let h = 1; h <= move.multihit; h++) {
-			totalP += move.basePowerCallback(null, null, { hit: h });
-			power += Math.pow(a, h) * (h == move.multihit ? 1 : 1 - a) * totalP
+	function c(compoundEyes = false) {
+		let power = move.basePower;
+		if (move.accuracy != true && move.accuracy != 100) {
+			let accuracy = move.accuracy;
+			if (compoundEyes) accuracy = Math.min(accuracy * 1.3, 100);
+			power *= accuracy / 100;
 		}
-	}
-	// -> Constant multihit
-	else if (typeof move.multihit == 'number') {
-		power *= move.multihit
-	}
-	//  -> Variable multihit (all are 2-5, with 35% chance for 2 or 3 and 15% chance for 4 or 5)
-	else if (typeof move.multihit == 'object') {
-		power *= 2 * 0.35 + 3 * 0.35 + 4 * 0.15 + 5 * 0.15
-	}
 
-	// Special case: Always crit
-	if (move.willCrit) power *= 1.5; // Technically not exact but shush
+		// Handle multihit
+		// -> Triple Kick and Triple Axel (also Population Bomb but Metronome can't call it for some reason)
+		if (move.multiaccuracy) {
+			power = 0;
+			let a = move.accuracy / 100;
+			if (compoundEyes) a = Math.min(a * 1.3, 100);
+			let totalP = 0;
+			for (let h = 1; h <= move.multihit; h++) {
+				totalP += move.basePowerCallback(null, null, { hit: h });
+				power += Math.pow(a, h) * (h == move.multihit ? 1 : 1 - a) * totalP
+			}
+		}
+		// -> Constant multihit
+		else if (typeof move.multihit == 'number') {
+			power *= move.multihit
+		}
+		//  -> Variable multihit (all are 2-5, with 35% chance for 2 or 3 and 15% chance for 4 or 5)
+		else if (typeof move.multihit == 'object') {
+			power *= 2 * 0.35 + 3 * 0.35 + 4 * 0.15 + 5 * 0.15
+		}
+
+		// Special case: Always crit
+		if (move.willCrit) power *= 1.5; // Technically not exact but shush
+
+		// Adjust power for Fluffy
+		if (fluffy && move.flags.contact) power /= 2;
+
+		return power;
+	}
+	let power = c();
 
 	if (!(move.type in typePower)) typePower[move.type] = { "total": 0, "num": 0, "totalPhys": 0, "numPhys": 0, "totalSpec": 0, "numSpec": 0 }
 	typePower[move.type].total += power;
@@ -142,16 +185,24 @@ for (const move of moves) {
 
 	moveDict[move.name] = power;
 
-	physSpecDict[move.category].numPower++
-	physSpecDict[move.category].totalPower += power
+	tallyDict[move.category].numPower++
+	tallyDict[move.category].totalPower += power
 
 	// If the raw BP was ≤60, account for technician boost
-	technicianDict.num++
-	technicianDict.total += power * (move.basePower <= 60 ? 1.5 : 1)
-	if (move.basePower <= 60) technicianDict.numTechnician++
+	tallyDict.technician.num++
+	tallyDict.technician.total += power * (move.basePower <= 60 ? 1.5 : 1)
+	if (move.basePower <= 60) tallyDict.technician.numApplicable++
+
+	// Recalculate BP for Compound eyes
+	const compoundEyesPower = c(true);
+	tallyDict.compoundEyes.num++
+	tallyDict.compoundEyes.total += compoundEyesPower;
+	if (compoundEyesPower != power) tallyDict.compoundEyes.numApplicable++;
 
 	if ("zMove" in move && "basePower" in move.zMove) zPower += move.zMove.basePower - power;
 }
+
+// tallyDict['Physical']['totalPower'] *= 1.5
 
 console.log("The most common move types that target enemies are:");
 const typeDictData = Object.keys(typeDict)
@@ -182,19 +233,21 @@ console.log()
 console.log("Breakdown of average physical vs. special attacks:");
 console.log(columnify(
 	["Physical", "Special"].map(cat => ({
-		"": cat, "count": physSpecDict[cat].num + " (" + Math.round(physSpecDict[cat].num / moves.length * 100) + "%)",
-		"power": Math.round(physSpecDict[cat].totalPower / physSpecDict[cat].numPower),
-		"acc": Math.round(physSpecDict[cat].totalAcc / physSpecDict[cat].num),
-		"totalPower": Math.round(physSpecDict[cat].totalPower),
-		"contact": Math.round(physSpecDict[cat].contact / physSpecDict[cat].num * 100) + "%"
+		"": cat, "count": tallyDict[cat].num + " (" + Math.round(tallyDict[cat].num / moves.length * 100) + "%)",
+		"power": Math.round(tallyDict[cat].totalPower / tallyDict[cat].numPower),
+		"acc": Math.round(tallyDict[cat].totalAcc / tallyDict[cat].num),
+		"totalPower": Math.round(tallyDict[cat].totalPower),
+		"contact": Math.round(tallyDict[cat].contact / tallyDict[cat].num * 100) + "%"
 	})), { minWidth: 5, dataTransform: (cell, _, i) => colorize(cell, ["Physical", "Special"][i]) }))
 console.log("(Average power doesn't include moves excluded from the last table, but everything else does. Power is accuracy-adjusted.)");
 console.log()
 
-console.log(`Average overall BP (accuracy-adjusted):\t${Math.round((physSpecDict["Physical"].totalPower + physSpecDict["Special"].totalPower) / (physSpecDict["Physical"].numPower + physSpecDict["Special"].numPower))}`);
-console.log(`BP with technician (accuracy-adjusted):\t${Math.round(technicianDict.total / technicianDict.num)}`);
-console.log(`So technician offers a ${Math.round((technicianDict.total / (physSpecDict["Physical"].totalPower + physSpecDict["Special"].totalPower) - 1) * 100)}% power boost.`)
-console.log(`Technician applies to ${technicianDict.numTechnician} moves.`)
+const baseAvgBP = (tallyDict["Physical"].totalPower + tallyDict["Special"].totalPower) / (tallyDict["Physical"].numPower + tallyDict["Special"].numPower);
+console.log(`Average overall BP (accuracy-adjusted):   \t${Math.round(baseAvgBP)}`);
+const technicianAvgBP = tallyDict.technician.total / tallyDict.technician.num;
+console.log(`BP with Technician (accuracy-adjusted):   \t${Math.round(technicianAvgBP)} (+${Math.round((technicianAvgBP / baseAvgBP - 1) * 100)}%) \t Applies to ${tallyDict.technician.numApplicable} moves`);
+const compoundEyesAvgBP = tallyDict.compoundEyes.total / tallyDict.compoundEyes.num;
+console.log(`BP with Compound Eyes (accuracy-adjusted):\t${Math.round(compoundEyesAvgBP)} (+${Math.round((compoundEyesAvgBP / baseAvgBP - 1) * 100)}%) \t Applies to ${tallyDict.compoundEyes.numApplicable} moves`);
 console.log()
 
 
@@ -287,12 +340,12 @@ const statData = legalMons
 			hp: p.baseStats.hp, def: p.baseStats.def, spd: p.baseStats.spd, atk: p.baseStats.atk, spa: p.baseStats.spa,
 			physBulk: +(adjustBulkForTyping ? stats.physBulkAdj : stats.physBulk).toFixed(2),
 			specBulk: +(adjustBulkForTyping ? stats.specBulkAdj : stats.specBulk).toFixed(2),
-			overallBulk: +((adjustBulkForTyping ? stats.physBulkAdj : stats.physBulk) * (physSpecDict["Physical"].totalPower / (physSpecDict["Physical"].totalPower + physSpecDict["Special"].totalPower))
-				+ (adjustBulkForTyping ? stats.specBulkAdj : stats.specBulk) * (physSpecDict["Special"].totalPower / (physSpecDict["Physical"].totalPower + physSpecDict["Special"].totalPower))).toFixed(2),
+			overallBulk: +((adjustBulkForTyping ? stats.physBulkAdj : stats.physBulk) * (tallyDict["Physical"].totalPower / (tallyDict["Physical"].totalPower + tallyDict["Special"].totalPower))
+				+ (adjustBulkForTyping ? stats.specBulkAdj : stats.specBulk) * (tallyDict["Special"].totalPower / (tallyDict["Physical"].totalPower + tallyDict["Special"].totalPower))).toFixed(2),
 			physPower: +(stats.physPower).toFixed(2),
 			specPower: +(stats.specPower).toFixed(2),
-			overallPower: +(stats.physPower * (physSpecDict["Physical"].totalPower / (physSpecDict["Physical"].totalPower + physSpecDict["Special"].totalPower))
-				+ stats.specPower * (physSpecDict["Special"].totalPower / (physSpecDict["Physical"].totalPower + physSpecDict["Special"].totalPower))).toFixed(2),
+			overallPower: +(stats.physPower * (tallyDict["Physical"].totalPower / (tallyDict["Physical"].totalPower + tallyDict["Special"].totalPower))
+				+ stats.specPower * (tallyDict["Special"].totalPower / (tallyDict["Physical"].totalPower + tallyDict["Special"].totalPower))).toFixed(2),
 			noSpeedBST: p.bst - p.baseStats.spe,
 			noSpeedTotal: stats.hp + stats.atk + stats.def + stats.spa + stats.spd,
 		}
@@ -335,24 +388,24 @@ console.log(`Using a Z-crystal on a move increases its power on average by ${(zP
 (This accounts for the many status moves that get no boost whatsoever.)`)
 console.log()
 
-for (const name of legalMons) {
-	const p = Dex.species.get(name);
-	const hp = (2 * p.baseStats.hp + 31 + 252 / 4) * 100 / 100 + 100 + 10
-	const def = (2 * p.baseStats.def + 31 + 252 / 4) * 100 / 100 + 5
-	const spd = (2 * p.baseStats.spd + 31 + 252 / 4) * 100 / 100 + 5
-
-	monDict[name] = Object.keys(moveDict)
-		.reduce((sum, move) => {
-			const m = Dex.moves.get(move);
-			return sum + (((2 * 100 / 5 + 2) * moveDict[move] * attackingStat / (m.category == 'Physical' ? def : spd)) / 50 + 2) * typeEffectiveness(m.type, p.types) * randomFactorAverage;
-		}, 0) * 100 / (Object.keys(moveDict).length * hp);
+const defensiveScoreStats = [];
+const RANDOM_FACTOR_AVG = (1 + .85) / 2;
+const attackingStatAtk = 400;
+const attackingStatSpa = 300;
+for (const mon of legalMons) {
+	const stats = calc_stats(mon);
+	defensiveScoreStats.push({
+		mon: mon, name: mon.name, type: mon.types.map(colorize).join("/"),
+		defensiveScore: Object.keys(moveDict).reduce((sum, moveName) => {
+			const move = Dex.moves.get(moveName);
+			return sum + (((2 * 100 / 5 + 2) * moveDict[moveName] * (move.category == 'Physical' ? attackingStatAtk / stats.def : attackingStatSpa / stats.spd)) / 50 + 2) * typeEffectiveness(move.type, mon.types) * RANDOM_FACTOR_AVG;
+		}, 0) * 100 / (Object.keys(moveDict).length * stats.hp)
+	})
 }
 
 console.log(`The top ${numMons} defensive score pokemon are:`);
-console.log(`Defensive score represents the average percent HP damage the Pokemon would take from an attacker with an Atk and SpA of ${attackingStat} that pulls a random attack from Metronome. This accounts for typing, physical vs. special attacks, and total HP. Lower is better.`)
-console.log(columnify(legalMons
-	.map(name => Dex.species.get(name))
-	.map(p => ({ name: p.name, type: p.types.map(colorize).join("/"), defensiveScore: monDict[p.name] }))
+console.log(`Defensive score represents the average percent HP damage the Pokemon would take from an attacker with ${attackingStatAtk} Atk and ${attackingStatSpa} SpA that pulls a random attack from Metronome. This accounts for typing, physical vs. special attacks, and total HP. Lower is better.`)
+console.log(columnify(defensiveScoreStats
 	.sort((a, b) => a.defensiveScore - b.defensiveScore)
 	.slice(0, numMons)
 	.map((r, i) => { r.defensiveScore = r.defensiveScore.toFixed(2); r.place = '#' + (i + 1); return r })
